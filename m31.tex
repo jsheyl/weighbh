@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+\pagestyle{empty}
+\begin{center}
+  \begin{tikzpicture}
+    \begin{scope}[scale=25]
+      \draw [rotate around={-20:(0:0.774)}] (0:0.774)
+      ellipse (0.005 and 0.02) node [right] {M\,31};
+      \draw (-4/10:0.770) circle (0.001) node [left] {M\,32}
+      (6/10:0.830) circle (0.001) node [right] {NGC\,205}
+      (8:0.620) circle (0.001) node [left] {NGC\,185}
+      (8:0.755) circle (0.001) node [left] {NGC\,147};
+      \draw [dashed] (0:0.774) circle  (0.1);
+    \end{scope}
+  \end{tikzpicture}
+\end{center}
+\end{document}
