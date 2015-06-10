@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Baessler {et~al.}(1999)Baessler, Heckel, Adelberger, , Gundlach,
@@ -49,12 +49,22 @@ Heyl, J.~S., Richer, H., Anderson, J., Fahlman, G., Dotter, A., Hurley, J.,
 \bibitem[{{Hui} \& {Nicolis}(2012)}]{2012PhRvL.109e1304H}
 {Hui}, L. \& {Nicolis}, A. 2012, Physical Review Letters, 109, 051304
 
+\bibitem[{{Hui} {et~al.}(2009){Hui}, {Nicolis}, \&
+  {Stubbs}}]{2009PhRvD..80j4002H}
+{Hui}, L., {Nicolis}, A., \& {Stubbs}, C.~W. 2009, Physical Review D, 80,
+  104002
+
 \bibitem[{{Koch} \& {Grebel}(2006)}]{2006AJ....131.1405K}
 {Koch}, A. \& {Grebel}, E.~K. 2006, \aj, 131, 1405
 
 \bibitem[{{Navarro} {et~al.}(1996){Navarro}, {Frenk}, \&
   {White}}]{1996ApJ...462..563N}
 {Navarro}, J.~F., {Frenk}, C.~S., \& {White}, S.~D.~M. 1996, \apj, 462, 563
+
+\bibitem[{{Nicolis} {et~al.}(2009){Nicolis}, {Rattazzi}, \&
+  {Trincherini}}]{2009PhRvD..79f4036N}
+{Nicolis}, A., {Rattazzi}, R., \& {Trincherini}, E. 2009, Physical Review D,
+  79, 064036
 
 \bibitem[{{Nordtvedt}(1968{\natexlab{a}})}]{1968PhRv..169.1014N}
 {Nordtvedt}, K. 1968{\natexlab{a}}, Physical Review, 169, 1014
