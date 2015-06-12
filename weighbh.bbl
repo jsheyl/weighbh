@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{31}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Baessler {et~al.}(1999)Baessler, Heckel, Adelberger, , Gundlach,
@@ -53,6 +53,15 @@ Heyl, J.~S., Richer, H., Anderson, J., Fahlman, G., Dotter, A., Hurley, J.,
   {Stubbs}}]{2009PhRvD..80j4002H}
 {Hui}, L., {Nicolis}, A., \& {Stubbs}, C.~W. 2009, Physical Review D, 80,
   104002
+
+\bibitem[{{Joseph} {et~al.}(2001){Joseph}, {Merritt}, {Olling}, {Valluri},
+  {Bender}, {Bower}, {Danks}, {Gull}, {Hutchings}, {Kaiser}, {Maran},
+  {Weistrop}, {Woodgate}, {Malumuth}, {Nelson}, {Plait}, \&
+  {Lindler}}]{2001ApJ...550..668J}
+{Joseph}, C.~L., {Merritt}, D., {Olling}, R., {Valluri}, M., {Bender}, R.,
+  {Bower}, G., {Danks}, A., {Gull}, T., {Hutchings}, J., {Kaiser}, M.~E.,
+  {Maran}, S., {Weistrop}, D., {Woodgate}, B., {Malumuth}, E., {Nelson}, C.,
+  {Plait}, P., \& {Lindler}, D. 2001, \apj, 550, 668
 
 \bibitem[{{Koch} \& {Grebel}(2006)}]{2006AJ....131.1405K}
 {Koch}, A. \& {Grebel}, E.~K. 2006, \aj, 131, 1405

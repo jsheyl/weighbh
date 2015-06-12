@@ -37,7 +37,9 @@ $^{1}$Department of Physics and Astronomy, University of British
   By examining the locations of central black holes in two elliptical
   galaxies, M\,32 and M\,87, we derive constraints on the violation of
   the strong equivalence principle for purely gravitational objects,
-  {\em i.e. black holes}, of less than six percent, $|\eta_N|<0.06$.
+  {\em i.e. black holes}, of less than eight percent, $|\eta_N|<0.08$
+  from M\,32.  The constraints from M\,87 are substantially weaker but could
+  improve dramatically with better astrometry.
 \end{abstract}
 
 \section{Introduction}
@@ -75,8 +77,9 @@ In particular we will examine the polarization of the orbits of
 supermassive black holes through the central regions of elliptical
 galaxies.  We will focus on elliptical galaxies because the presence
 of central black holes is common in sufficiently large elliptical
-galaxies and the location of the centre of the stellar potential is
-straightforward to constrain.  Interactions between galaxies are
+galaxies and the location of the bottom of the graviational potential
+is straightforward to constrain by determining the centroid of the
+distribution stellar light.  Interactions between galaxies are
 ubiquitous, so example systems are straightforward to find.  In
 particular we will examine the small elliptical galaxies that orbit
 the largest neighbour of the Milky Way galaxy, the Andromeda galaxy or
@@ -129,8 +132,15 @@ $\Delta=\eta_N$.
 The massive black hole also experiences an acceleration due to the
 stellar system in which it resides.  Furthermore, dynamical friction
 with the less massive stars nearby damps any motion of the black hole
-relative to its equilibrium position.  Near minimum of the stellar
-potential we can approximate it as a harmonic oscillator so
+relative to its equilibrium position on a short time scale, so absent
+SEP violation or rare astrophysical effects such as a recent merger or
+asymetric jets the black hole should lie at the bottom of the
+gravitational potential well.  The effects of individual stellar
+encounters, Brownian motion, are much smaller than what we discuss
+here \citep{2011ApJ...735...57B}.
+
+Near minimum of the stellar potential we can approximate it as a
+harmonic oscillator so
 \begin{equation}
   \left (1 - \Delta \right) \omega^2 x
    = a_\bullet - a_\star = -\Delta \frac{GM}{d^2}
@@ -221,7 +231,9 @@ proportional to $r^{-3}$ like the outer regions of the
 Navarro-Frenk-White profile (\citeyear{1996ApJ...462..563N}), the mean
 value of the geometric term is $3\pi/16 \approx 0.59$ and the median
 value is $3\sqrt{3}/8 \approx 0.65$.  Ninety percent of the time the
-term lies between 0.03 and 0.996.
+term lies between 0.03 and 0.996.  Regardless of the particular
+distribution, the most likely value of $\cos i$ is one because
+galaxies cluster.  Unless we state otherwise we will use this value.
 
 \section{The Andromeda Galaxy System}
 
@@ -261,29 +273,30 @@ sky.  We can estimate the displacement of the black hole from the
 centre of M\,32 as a function of $\Delta$ in the best-case scenario of
 the minimal separation of M\,32 from M\,31 of about 5~kpc.  In this
 case M\,32 would be well within the halo of M\,31, and we could use
-the circular velocity of M31 of 240~km/s to estimate the acceleration
-of M\,32 toward the centre of M31, $a_\star$ in Eq.~(\ref{eq:1}),
+the circular velocity of M31 of 200~km/s at this distance to estimate
+the acceleration of M\,32 toward the centre of M31, $a_\star$ in
+Eq.~(\ref{eq:1}),
 \begin{equation}
-  a_\star = \frac{v^2}{d} = 3.7\times 10^{-8} \mathrm{cm~s}^{-2}
+  a_\star = \frac{v^2}{d} = 3.6\times 10^{-8} \mathrm{cm~s}^{-2}
   \label{eq:7}.
 \end{equation}
 For the galaxy M\,32 we take $m=8 \times 10^8 \msun$ and
 $R_\mathrm{eff} = 100$~pc so $a=55$~pc and
 \begin{equation}
-  x = 0.55 \frac{\Delta}{1-\Delta} \mathrm{pc}
+  x = 0.38 \frac{\Delta}{1-\Delta} \mathrm{pc}
   \label{eq:8}
 \end{equation}
 or
 \begin{equation}
-  \Delta \theta = \frac{x}{d_\mathrm{M32-Sun}} = 0.17 \frac{\Delta}{1-\Delta} \mathrm{arcseconds},
+  \Delta \theta = \frac{x}{d_\mathrm{M32-Sun}} = 0.12 \frac{\Delta}{1-\Delta} \mathrm{arcseconds},
   \label{eq:9}
 \end{equation}
 so if M\,32 lies indeed at the close to minimum distance to M\,31, the
 existing measurement of the position of the black hole yields a
-constraint; either $\Delta < 0.75$ or $\Delta>1.5$.
-\citet{2014ApJ...788L..38D} argue that the actual position of M\,32 is
-85~kpc in front of the disk of M\,31.  Here the expected displacement
-is much smaller
+constraint; either $\Delta < 0.81$ or $\Delta>1.3$.
+\citet{2014ApJ...788L..38D} argue that the actual
+position of M\,32 is 85~kpc in front of the disk of M\,31.  Here the
+expected displacement is much smaller
 \begin{equation}
   x = 0.02 \frac{\Delta}{1-\Delta} \mathrm{pc}
   \label{eq:10}
@@ -312,12 +325,15 @@ instrument features 0.04~arcsecond pixels and a $162 \times
 Spectrograph (STIS) and the planetary camera on Wide-Field Planetary
 Camera 2 (WF/PC2) feature a finer pixel scale but at the expense of
 field of view.  We used images from GO-11714 (PI: Bond) with total
-exposure time of 120~seconds.  To localise the core, we used circular
-and elliptical apertures of 0.16 arcseconds and 0.2 arcseconds.  To
-localise the centroid of the outer regions we used two elliptical
-annuli: one of inner axes 2.8 and 4.3 arcseconds and outer axes of 5.7
-and 8.5 arcseconds and one half that size.  The centres of the annuli
-are initially roughly placed within about an arcsecond of the core and
+exposure time of 120~seconds.  To localise the stellar core which lies
+within the black hole sphere of influence of about 0.3~arcseconds
+\citep{2001ApJ...550..668J}, we
+used circular and elliptical apertures of 0.16 arcseconds and 0.2
+arcseconds.  To localise the centroid of the outer regions we used two
+elliptical annuli: one of inner axes 2.8 and 4.3 arcseconds and outer
+axes of 5.7 and 8.5 arcseconds and one half that size, well outside
+the black hole's sphere of influence.  The centres of the annuli are
+initially roughly placed within about an arcsecond of the core and
 updated to lie on the calculated centroid. This is iterated thirty
 times.  The centroids of the various annuli to probe the galactic
 potential coincide to within 0.01~arcseconds as do the ellipses and
@@ -325,12 +341,12 @@ circles centered on the stellar cusp, yielding an estimate of the
 precision of 0.01~arcseconds.  Furthermore, the centroid of the cusp
 and the outer regions also agree to within 0.01~arcseconds.  If we
 combine this constraint with the distance estimate of
-\citet{2006AJ....131.1405K}, this yields a 
+\citet{2006AJ....131.1405K}, this yields a
 %%%LH
 constraint
 %%%LH
 , $|\Delta|<
-0.06$.
+0.08$.
 
 The three smaller elliptical galaxies, NGC\,205, NGC\,147 and NGC\,185,
 have more favourable geometry and smaller mass densities.  However,
@@ -465,7 +481,7 @@ contribution of the stellar mass to the circular velocity in this
 inner region, yielding a value of about 160~km/s at $4^{\prime\prime}$
 from the black hole consistent with the photometry of
 \citet{2006ApJS..164..334F} and a mass-to-light ratio of 4. Assuming a
-smaller mass-to-light ratio would yield small 
+smaller mass-to-light ratio would yield smaller 
 %%% LH
 constraints 
 %%% LH
@@ -570,7 +586,7 @@ updated to lie on the calculated centroid. This is iterated thirty
 times.
 
 To determine the location of the black hole we performed a similar
-centroiding on circle 
+centroiding on circular
 %%% LH
 apertures
 %%% LH
@@ -610,33 +626,30 @@ possibly yield smaller constraints.
 %%% LH
 
 %%% LH
-How does our limit on $\Delta$ fit within the context of
-existing scalar-tensor theories? SEP violation occurs in these
-theories because compact objects such as black holes have
-a suppressed scalar charge, leading to a weaker
-scalar coupling to the environment. For the classic Brans-Dicke
-theory, solar system tests constrain the scalar-matter coupling
-to be fairly weak to begin with (much weaker than tensor-matter),
-thus predicting SEP violation that is much below our limit.
-More recent scalar-tensor theories open up the interesting possibility
-of predicting observable SEP violation on large scales while
-respecting the solar system constraints -- the latter is achieved by
-what is known as screening mechanism. Screening introduces
-a subtlety in the interpretation of $\Delta$, however -- it becomes scale/environment
-dependent. In the case of the M32-M31 system, we estimate $\Delta \sim 10^{-3}$
-in galileon theories \citep{2009PhRvD..79f4036N}. 
-For such theories, $\Delta \sim 1$ can
+How does our limit on $\Delta$ fit within the context of existing
+scalar-tensor theories? SEP violation occurs in these theories because
+compact objects such as black holes have a suppressed scalar charge,
+leading to a weaker scalar coupling to the environment. For the
+classic Brans-Dicke theory, solar system tests constrain the
+scalar-matter coupling to be fairly weak to begin with (much weaker
+than tensor-matter), thus predicting SEP violation that is much below
+our limit.  More recent scalar-tensor theories open up the interesting
+possibility of predicting observable SEP violation on large scales
+while respecting the solar system constraints -- the latter is
+achieved by what is known as screening mechanism. Screening introduces
+a subtlety in the interpretation of $\Delta$, however -- it becomes
+scale/environment dependent. In the case of the M32-M31 system, we
+estimate $\Delta \sim 10^{-3}$ in galileon theories
+\citep{2009PhRvD..79f4036N}.  For such theories, $\Delta \sim 1$ can
 be found in situations where the acceleration is due to large scale
 structure, quite a bit smaller than the acceleration of our setup
-\citep{2012PhRvL.109e1304H}. 
-Despite this, deriving a phenomenological limit on $\Delta$ is useful, 
-for several reasons.
+\citep{2012PhRvL.109e1304H}.  Despite this, deriving a
+phenomenological limit on $\Delta$ is useful, for several reasons.
 First, new theories -- massive gravity being an example -- are still
-being developed. Second, equivalence principle violation remains
-to be worked out even for some existing theories
-\citep{2009PhRvD..80j4002H}.
-Third, this type of galaxy-satellite system constraint on $\Delta$ 
-can be improved.
+being developed. Second, equivalence principle violation remains to be
+worked out even for some existing theories
+\citep{2009PhRvD..80j4002H}.  Third, this type of galaxy-satellite
+system constraint on $\Delta$ can be improved.
 %%% LH
 
 Both the calibration and observational analysis presented here can be
@@ -678,7 +691,7 @@ one has to link the radio coordinate system to the visual one.  These
 could possibly be improved dramatically with further observations.
 The visual core of M\,32 lies within 0.01~arcseconds of the centroid
 of the outer isophotes of the galaxy, indicating that if the black
-hole is coincident with the core, $|\eta_N|<0.06$, , competitive with the
+hole is coincident with the core, $|\eta_N|<0.08$, competitive with the
 results from pulsar timing \citep{Stairs:2005}.
 
 Furthermore, the discovery of a supermassive black hole in one of the
