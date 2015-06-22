@@ -72,14 +72,14 @@ case binary pulsars.  The recently discovered millisecond pulsar in a
 triple system, PSR J0337+1715, will provide further interesting
 constraints \citep{Ransom:2014aa}.
 
-Here we perform the test first proposed by \cite{2012PhRvL.109e1304H}.
+Here we perform the test proposed by \cite{2012PhRvL.109e1304H}.
 In particular we will examine the polarization of the orbits of
 supermassive black holes through the central regions of elliptical
 galaxies.  We will focus on elliptical galaxies because the presence
 of central black holes is common in sufficiently large elliptical
 galaxies and the location of the bottom of the graviational potential
 is straightforward to constrain by determining the centroid of the
-distribution stellar light.  Interactions between galaxies are
+distribution of stellar light.  Interactions between galaxies are
 ubiquitous, so example systems are straightforward to find.  In
 particular we will examine the small elliptical galaxies that orbit
 the largest neighbour of the Milky Way galaxy, the Andromeda galaxy or
@@ -93,7 +93,7 @@ will be discussed in \S \ref{conclusions}.
 \section{Calibration}
 
 Let us suppose that we are studying a small stellar system in the
-gravitational of a large one.  The stars in the small system
+gravitational field of a large one.  The stars in the small system
 experience an acceleration toward the centre of the larger one
 \begin{equation}
   a_\star = \frac{GM}{d^2}
@@ -105,7 +105,7 @@ typically ten to one hundred times larger than those exerted by
 large-scale structure $a \sim 600~\mathrm{km~s}^{-1} H_0 \sim 10^{-10}
 \mathrm{cm~s}^{-2}$.
 
-Furthermore, let us assume that the a massive black hole within the
+Furthermore, let us assume that a massive black hole within the
 smaller system experiences a different acceleration
 \begin{equation}
   a_\bullet = \left ( 1 - \Delta \right ) a_\star
@@ -139,7 +139,7 @@ gravitational potential well.  The effects of individual stellar
 encounters, Brownian motion, are much smaller than what we discuss
 here \citep{2011ApJ...735...57B}.
 
-Near minimum of the stellar potential we can approximate it as a
+Near the minimum of the stellar potential we can approximate it as a
 harmonic oscillator so
 \begin{equation}
   \left (1 - \Delta \right) \omega^2 x
@@ -165,11 +165,11 @@ find that
   \omega^2 \approx \frac{Gm}{a^3}
   \label{eq:5}
 \end{equation}
-from n-body simulations independent of the number of particles in the
-simulations from 10,000 to 250,000.  In these simulations we find that
-small perturbations of the black hole from the centre result in
-sinusoidal oscillations with this typical frequency, regardless of the
-number of particles and the softening length adopted, and the
+from n-body simulations that treat perturbation of the stellar system
+by the black hole in a self-consistent manner. In these simulations we
+find that small perturbations of the black hole from the centre result
+in sinusoidal oscillations with this typical frequency, regardless of
+the number of particles and the softening length adopted, and the
 amplitude of the perturbation as long as it is smaller than the black
 hole's sphere of influence.  For such small perturbations the black
 hole pulls the neighbouring stars along with it. The half-mass radius
@@ -182,19 +182,7 @@ within the half-mass radius is
 \end{equation}
 The oscillation frequency of the black hole is significantly larger
 than the typical frequency of the system because the black hole lies
-near the centre of the galaxy where typical density is larger.  On the
-other hand, if one directly used Eq.~(\ref{eq:4}) to calculate the
-restoring force toward the centre, one would find that it is constant
-with displacement from the centre.  
-This would assume that the density
-is actually singular at the centre but also 
-would neglect the effect
-of the black hole on the neighbouring stars which would be dragged
-with it.  
-%%% LH
-Our simulations take into account this effect in a self-consistent
-manner.
-%%% LH
+near the centre of the galaxy where typical density is larger. 
 We will compare this estimate with the detailed
 measurements of the potential near the core of the elliptical galaxy,
 M\,87, and find good agreement.
@@ -217,8 +205,8 @@ explicit by calculating the apparent displacement across the sky as
 where $i$ is the inclination of the line connecting the two bodies
 with respect to the plane of the sky, $\delta$ is the angular distance
 between the bodies and $\alpha$ is the angular size of the Hernquist
-radius $a$ of the host galaxy.  If smaller galaxies are distribution
-as an isothermal distribution about the perturbing galaxy as
+radius $a$ of the host galaxy.  If smaller galaxies follow
+an isothermal distribution about the perturbing galaxy as
 \citet{2006AJ....131.1405K} found for the satellites of M\,31, the
 mean value of the geometric term $|\cos^3i|$ is $4/(3\pi) \approx
 0.42$ and the median value is $\sqrt{2}/4\approx 0.35$.  Ninety
@@ -231,9 +219,7 @@ proportional to $r^{-3}$ like the outer regions of the
 Navarro-Frenk-White profile (\citeyear{1996ApJ...462..563N}), the mean
 value of the geometric term is $3\pi/16 \approx 0.59$ and the median
 value is $3\sqrt{3}/8 \approx 0.65$.  Ninety percent of the time the
-term lies between 0.03 and 0.996.  Regardless of the particular
-distribution, the most likely value of $\cos i$ is one because
-galaxies cluster.  Unless we state otherwise we will use this value.
+term lies between 0.03 and 0.996.
 
 \section{The Andromeda Galaxy System}
 
@@ -267,7 +253,7 @@ galaxies are more uncertain than their positions on the sky.
 A supermassive black hole (SMBH) has already been discovered in the
 core of the compact elliptical galaxy M\,32
 \citep{1997Natur.385..610V} and found to be within 0.5 arcseconds of
-then nucleus of the galaxy \citep{2015arXiv150203231Y}.  M\,32 is
+the nucleus of the galaxy \citep{2015arXiv150203231Y}.  M\,32 is
 located about 0.4$^\circ$ from the centre of M\,31 in the plane of the
 sky.  We can estimate the displacement of the black hole from the
 centre of M\,32 as a function of $\Delta$ in the best-case scenario of
@@ -327,29 +313,29 @@ Camera 2 (WF/PC2) feature a finer pixel scale but at the expense of
 field of view.  We used images from GO-11714 (PI: Bond) with total
 exposure time of 120~seconds.  To localise the stellar core which lies
 within the black hole sphere of influence of about 0.3~arcseconds
-\citep{2001ApJ...550..668J}, we
-used circular and elliptical apertures of 0.16 arcseconds and 0.2
-arcseconds.  To localise the centroid of the outer regions we used two
-elliptical annuli: one of inner axes 2.8 and 4.3 arcseconds and outer
-axes of 5.7 and 8.5 arcseconds and one half that size, well outside
-the black hole's sphere of influence.  The centres of the annuli are
-initially roughly placed within about an arcsecond of the core and
-updated to lie on the calculated centroid. This is iterated thirty
-times.  The centroids of the various annuli to probe the galactic
-potential coincide to within 0.01~arcseconds as do the ellipses and
-circles centered on the stellar cusp, yielding an estimate of the
-precision of 0.01~arcseconds.  Furthermore, the centroid of the cusp
-and the outer regions also agree to within 0.01~arcseconds.  If we
-combine this constraint with the distance estimate of
-\citet{2006AJ....131.1405K}, this yields a
-%%%LH
-constraint
-%%%LH
-, $|\Delta|<
-0.08$.
+\citep{2001ApJ...550..668J}, we used circular and elliptical apertures
+of 0.16 arcseconds and 0.2 arcseconds.  To localise the centroid of
+the outer regions we used two elliptical annuli: one of inner axes 2.8
+and 4.3 arcseconds and outer axes of 5.7 and 8.5 arcseconds and one
+half that size, well outside the black hole's sphere of influence.
+The centres of the annuli are initially roughly placed within about an
+arcsecond of the core and updated to lie on the calculated
+centroid. This is iterated thirty times.  The centroids of the various
+annuli to probe the galactic potential coincide to within
+0.01~arcseconds as do the ellipses and circles centered on the stellar
+cusp, yielding an estimate of the precision of 0.01~arcseconds.
+Furthermore, the centroid of the cusp and the outer regions also agree
+to within 0.01~arcseconds.  If we combine this constraint with the
+distance estimate of \citet{2006AJ....131.1405K}, this yields a
+constraint $|\Delta|<0.08$.  The distances given by
+\citet{2006AJ....131.1405K} are not consistent with the proposal of
+\citet{2014ApJ...788L..38D}.  In fact the maximal distance between
+M\,31 and M\,32 consistent with the uncertainties given by
+\cite{2006AJ....131.1405K} is 45~kpc.  In the case the constraints on
+$\Delta$ would be much weaker with $\Delta<0.75$ or $\Delta>1.5$.
 
 The three smaller elliptical galaxies, NGC\,205, NGC\,147 and NGC\,185,
-have more favourable geometry and smaller mass densities.  However,
+have smaller mass densities and may have more favourable geometry.  However,
 SMBHs have not yet been identified in these galaxies.  Each of these
 galaxies has a mass of about $2 \times 10^8 \msun$ and a
 $R_\mathrm{eff} \approx 300$~pc, so $a \approx 165$~pc.  The two
@@ -362,16 +348,20 @@ typical value of the displacement of
   \label{eq:12}.
 \end{equation}
 Although NGC\,205 may be somewhat closer to M~31 at 50~kpc than the
-other galaxies, the geometry is somewhat poorer perhaps reducing the
+other galaxies, the geometry is somewhat poorer according to the
+distance given by \citet{2006AJ....131.1405K} perhaps reducing the
 angular displacement by a factor of two counteracting the increased
 acceleration.  This yields a similar observed displacement.  If a SMBH
 is discovered near the centre of these galaxies and can be localised
 within 0.5~arcseconds, this would yield a constraint of $-2.0 < \Delta
 < 0.4$.
 
-On the other hand if NGC\,205 lies at the same distance from us as
-M\,31, this minimum possible distance to M\,31 is about 7~kpc, and we
-obtain a much larger linear and angular displacement
+On the other hand, NGC\,205 may lie at the same distance from
+us as M\,31. This is consistent with the errorbars given by
+\citet{2006AJ....131.1405K}.  Furthermore, \citet{2006AJ....131..332G}
+argue that NGC\,205 is interacting tidally with M\,31, favouring this
+interpretation.  At this minimum possible distance to M\,31 of about
+7~kpc, and we obtain a much larger linear and angular displacement
 \begin{equation}
   x = 43. \frac{\Delta}{1-\Delta} \mathrm{pc} ~\mathrm{and}~
   \Delta \theta = 13. \frac{\Delta}{1-\Delta} \mathrm{arcseconds}.
@@ -399,7 +389,7 @@ the mass of M\,87 to be about $4\times 10^{12} \msun$
 $10^{13} \msun$ at a distance of $1.3^\circ$. This yields a
 displacement of
 \begin{equation}
-  \Delta \theta = 0.08 \frac{\Delta}{1-\Delta} \cos^3 i
+  \Delta \theta = 0.08 \cos^3 i \frac{\Delta}{1-\Delta} 
   \mathrm{arcseconds}.
   \label{eq:16}
 \end{equation}
@@ -475,7 +465,7 @@ about 7~arcseconds.
 
 \citet{2013ApJ...770...86W} determine the mass of the central black
 hole of M\,87 to be about $3.5 \times 10^{9} \msun$ (approximately
-$10^{-3}$ of the mass of the galaxy) and to dominate the mass within
+$10^{-3}$ of the mass of the galaxy) and to dominate the mass 
 within about 5.61~arcseconds of the centre.  They also model the
 contribution of the stellar mass to the circular velocity in this
 inner region, yielding a value of about 160~km/s at $4^{\prime\prime}$
@@ -538,13 +528,15 @@ However, subsequently
 %%% LH
 neither
 %%% LH
-\citet{2011ApJ...729..119G} nor
-\citet{2013ApJ...770...86W} found evidence for displacement greater
-than about one parsec.  \citet{2010ApJ...717L...6B} outlined several
-astrophysical explanations for a potential displacement such as a SMBH
-binary, a recent merging of black holes or a one-sided jet.  The
-interaction with the neighbouring stars or even clusters of stars is
-too weak to explain such a displacement.
+\citet{2011ApJ...729..119G} nor \citet{2013ApJ...770...86W} found
+evidence for displacement greater than about one parsec; the position
+determined by \citet{2011ApJ...729..119G} was consistent with that of
+\citet{2010ApJ...717L...6B} within the larger errorbars of
+\citet{2011ApJ...729..119G}.  \citet{2010ApJ...717L...6B} outlined
+several astrophysical explanations for a potential displacement such
+as a SMBH binary, a recent merging of black holes or a one-sided jet.
+The interaction with the neighbouring stars or even clusters of stars
+is too weak to explain such a displacement.
 
 To measure the possible deviation of the position of the black hole on
 the sky and the centre of the potential well of the galaxy we use
@@ -596,15 +588,11 @@ this process several times using different starting positions,
 resulting in slightly different centroids all consistent within their
 mutual standard deviation of 0.03~arcseconds, slightly less than a
 pixel.  This is consistent with the precision found by
-\cite{2013ApJ...770...86W} and poorer than we found with M~32 because
+\citet{2013ApJ...770...86W} and poorer than we found with M~32 because
 the surface brightness profile of M\,87 is much shallower.  The
 isophotes constrain the deviation of the black hole from the centre of
-the potential within 0.03~arcseconds, yielding a 
-%%% LH
-constraint 
-%%% LH
-the
-violation of the SEP for black holes of $-1<\Delta<0.3$, assuming the
+the potential within 0.03~arcseconds, yielding a constraint on
+the violation of the SEP for black holes of $-1<\Delta<0.3$, assuming the
 more conservative displacement estimate Eq.~(\ref{eq:17}) and a
 favourable geometry of $i\approx 0^\circ$.  Using additional
 images and an more sophisticated isophote fitting procedure could
@@ -621,11 +609,8 @@ possibly yield smaller constraints.
 \end{figure}
 
 \section{Conclusions}
-%%% LH
 \label{conclusions}
-%%% LH
 
-%%% LH
 How does our limit on $\Delta$ fit within the context of existing
 scalar-tensor theories? SEP violation occurs in these theories because
 compact objects such as black holes have a suppressed scalar charge,
