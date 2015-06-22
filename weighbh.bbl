@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{32}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Baessler {et~al.}(1999)Baessler, Heckel, Adelberger, , Gundlach,
@@ -36,6 +36,11 @@ Baessler, S., Heckel, B.~R., Adelberger, E.~G., , Gundlach, J.~H., Schmidt, U.,
   {Faber}, {G{\"u}ltekin}, {Murphy}, \& {Tremaine}}]{2011ApJ...729..119G}
 {Gebhardt}, K., {Adams}, J., {Richstone}, D., {Lauer}, T.~R., {Faber}, S.~M.,
   {G{\"u}ltekin}, K., {Murphy}, J., \& {Tremaine}, S. 2011, \apj, 729, 119
+
+\bibitem[{{Geha} {et~al.}(2006){Geha}, {Guhathakurta}, {Rich}, \&
+  {Cooper}}]{2006AJ....131..332G}
+{Geha}, M., {Guhathakurta}, P., {Rich}, R.~M., \& {Cooper}, M.~C. 2006, \aj,
+  131, 332
 
 \bibitem[{{Hernquist}(1990)}]{1990ApJ...356..359H}
 {Hernquist}, L. 1990, \apj, 356, 359
@@ -135,7 +140,7 @@ Ransom, S.~M., Stairs, I.~H., Archibald, A.~M., Hessels, J. W.~T., Kaplan,
 {Walsh}, J.~L., {Barth}, A.~J., {Ho}, L.~C., \& {Sarzi}, M. 2013, \apj, 770, 86
 
 \bibitem[{Will(2014)}]{Will:lrr}
-Will, C. 2014, Living Rev. Relativity, 17, 4, uRL (accessed 16 May 2015):
+Will, C. 2014, Living Rev. Relativity, 17, 4, (accessed 16 May 2015):
   http://www.livingreviews.org/lrr-2014-4
 
 \bibitem[{{Williams} {et~al.}(1976){Williams}, {Dicke}, {Bender}, {Alley},
