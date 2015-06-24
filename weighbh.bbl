@@ -1,10 +1,13 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{33}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
-\bibitem[{Baessler {et~al.}(1999)Baessler, Heckel, Adelberger, , Gundlach,
-  Schmidt, \& Swanson}]{Baess:1999}
-Baessler, S., Heckel, B.~R., Adelberger, E.~G., , Gundlach, J.~H., Schmidt, U.,
-  \& Swanson, H.~E. 1999, \prl, 83, 3585
+\bibitem[{{Adelberger}(2001)}]{2001CQGra..18.2397A}
+{Adelberger}, E.~G. 2001, Classical and Quantum Gravity, 18, 2397
+
+\bibitem[{Bae{\ss}ler {et~al.}(1999)Bae{\ss}ler, Heckel, Adelberger, ,
+  Gundlach, Schmidt, \& Swanson}]{Baess:1999}
+Bae{\ss}ler, S., Heckel, B.~R., Adelberger, E.~G., , Gundlach, J.~H., Schmidt,
+  U., \& Swanson, H.~E. 1999, \prl, 83, 3585
 
 \bibitem[{{Batcheldor} {et~al.}(2010){Batcheldor}, {Robinson}, {Axon},
   {Perlman}, \& {Merritt}}]{2010ApJ...717L...6B}
