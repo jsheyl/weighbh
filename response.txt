@@ -1,0 +1,117 @@
+Major Question & Comments
+
+
+1) Model Assumptions and Uncertainties.
+
+Section 2 of the paper describes how a violation of SEP eventually
+leads to a displacement between the position of the stars and the
+black hole, culminating in Equation (9).  However Eq. (9) does not
+seem to be derived from the previous calculations in the paper.  I was
+able to derive something similar to equation (9), assuming that the
+black hole is found in a cored galaxy with constant density \rho_core:
+
+x/d = (\Delta)/(\1 - \Delat) * (M_G / (4/3*pi * d^3)) * (1/\rho_core)   (*)
+
+This was derived by setting the relative acceleration of the black
+hole to the stars equal to the acceleration felt by the black hole if
+displaced by a distance x.  Qualitatively this is similar to Equation
+9, except the relative displacement depends on the average density of
+the core of the galaxy - not the average density of the galaxy.
+
+I could not derive a similar relative for the Hernquist profile. It
+has no density core, but rather the density diverges as x -> 0.
+Assuming that the profile is fixed (a poor assumption, but necessary),
+the Hernquist profile results in roughly constant acceleration for x
+<< a.
+
+* We absoutely agree with this statement.  However, the mass of the stars
+* that form the core is much smaller than the mass of the black hole, so
+* we have used numerical simulations to understand the motion of the BH
+* in the galactic potential.
+
+M32 is a relatively dense galaxy, with extremely high stellar
+densities near the radius of influence of the black hole.  From
+Section 3, the value of rho_core assumed is effectively m / (4/3 pi
+a^3) ~ 1000 Msun/pc^3.  From Lauer et al (1998: Fig. 17 of M32 +/- 1)
+the stellar mass density near the radius of influence is ~ 10^5
+Msun/pc^3.  This is 100x greater than assumed in the paper suggesting
+that the model used overestimates the constraint on violations of SEP.
+In Hui & Nichols (2012), the authors suggested searches in galaxies
+with very low central densities.
+
+Direct simulations modeling the M32 galaxy under acceleration should
+be able to determine how well \Delta can be constrained assuming a
+fixed geometry.  Without direct simulations, it is not clear what
+constraints can be derived.
+
+* We used the Hernquist profile to model the centres of the galaxies
+* as previous researchers have done, to motivate the necessity of
+* numerical models and to get the scaling of the restoring force on
+* the hole with the properties of the galaxy.  The density at the
+* centre of the Hernquist profile diverges and this formally yields an
+* constant restoring force for a test mass.
+
+* The mass of the black hole is typically large compared to the mass
+* contained within the cusp, so the numerical simualtions are required
+* to determine the actual size of the restoring forces because the
+* observed cusp in the centres of these galaxies is necessarily
+* correlated with the black hole.  We used the numerical simulations
+* to measure the strength of the restoring force due to the stars in
+* the vicinity of the black hole but beyond the sphere of influence of
+* the hole.  Of course, this is a difficult to define boundary which
+* is why we use the simulations.  From the observed velocites near the
+* black hoel in M87, we loosely define a sphere of influence and find
+* results similar to the numerical simulations.
+
+2) Reported limits and uncertainties
+
+The reported limits, especially if used in the abstract, should include the
+appropriate range of uncertainty  (68% confidence, 95% confidence) owing to the
+unknown geometry of the system (i.e. cos i), or other uncertainties (M_31).
+
+* We have added the uncertainties to the discussion in the abstract
+* and throughout.
+
+______________________________________
+
+Other comments and questions:
+
+1) In Section 3, the authors refer to circular apertures.  Do they use full circles
+including the cusp of stars in the center?  How would this change with annuli?  
+
+* We used small circular apertures to localize the cusp itself or the AGN in
+* M87.  We used elliptical annuli in the case of M32 to find the centre of 
+* the light distribution.  These annuli did not include the light from the cusp.
+* For M87, we used a circular annuli with the region along the jet and antijet
+* removed.
+
+2) Is Eq. 10 truley independent of distance?  For example, derived quantities such as M often depend on  distance as well.
+
+* It is essentially independent of distance because it depends on angular sizes
+* and on the ratio of masses, so the distance dependence drops out.
+
+3) Is \Delta > 1 already constrained by the presence of the BH in the centers of
+galaxies?  I.e., when \Delta > 1, then the acceleration between the stars and black hole are repulsive.
+
+* This is an excellent point, so we have removed the discussion of constraints 
+* with Delta>1 because we already know that Delta<1.  We have added this point
+* into the text after equation (5).
+
+4) In Figure 2, it would be useful to see the expected direction of the acceleration
+relative to the jet in M87.
+
+* We have added a discussion of the locations of the nearby galaxies,
+* M84 and M89 in the figure caption of Fig. 2.  M84 is to the right (west)
+* and M89 is to the left (east).g
+
+
+5) In section 2, the authors discuss the oscillation of the black hole
+in the center of hernquist profiles.  Given |\Delta| >0, is the black
+hole expected to be offset in a fixed position, or oscillate within
+the potential? What occurs in numerical experiments?  The text is
+unclear.
+
+* One would expect that the black hole would be offset from the centre
+* by constant amount because dynamical friction would damp the
+* oscillatory behaviour so that the hole would lie at the centre of
+* the combined potential.
