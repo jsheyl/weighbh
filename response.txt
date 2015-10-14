@@ -24,7 +24,7 @@ Assuming that the profile is fixed (a poor assumption, but necessary),
 the Hernquist profile results in roughly constant acceleration for x
 << a.
 
-* We absoutely agree with this statement.  However, the mass of the stars
+* We absolutely agree with this statement.  However, the mass of the stars
 * that form the core is much smaller than the mass of the black hole, so
 * we have used numerical simulations to understand the motion of the BH
 * in the galactic potential.
@@ -50,17 +50,17 @@ constraints can be derived.
 * the hole with the properties of the galaxy.  The density at the
 * centre of the Hernquist profile diverges and this formally yields an
 * constant restoring force for a test mass.
-
+*
 * The mass of the black hole is typically large compared to the mass
-* contained within the cusp, so the numerical simualtions are required
+* contained within the cusp, so the numerical simulations are required
 * to determine the actual size of the restoring forces because the
 * observed cusp in the centres of these galaxies is necessarily
 * correlated with the black hole.  We used the numerical simulations
 * to measure the strength of the restoring force due to the stars in
 * the vicinity of the black hole but beyond the sphere of influence of
 * the hole.  Of course, this is a difficult to define boundary which
-* is why we use the simulations.  From the observed velocites near the
-* black hoel in M87, we loosely define a sphere of influence and find
+* is why we use the simulations.  From the observed velocities near the
+* black hole in M87, we loosely define a sphere of influence and find
 * results similar to the numerical simulations.
 
 2) Reported limits and uncertainties
@@ -88,7 +88,8 @@ including the cusp of stars in the center?  How would this change with annuli?
 2) Is Eq. 10 truley independent of distance?  For example, derived quantities such as M often depend on  distance as well.
 
 * It is essentially independent of distance because it depends on angular sizes
-* and on the ratio of masses, so the distance dependence drops out.
+* and on the ratio of masses, so the distance dependence drops out.  The largest
+* uncertainties are of course the geometric factors.
 
 3) Is \Delta > 1 already constrained by the presence of the BH in the centers of
 galaxies?  I.e., when \Delta > 1, then the acceleration between the stars and black hole are repulsive.
