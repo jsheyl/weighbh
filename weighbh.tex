@@ -37,11 +37,12 @@ $^{1}$Department of Physics and Astronomy, University of British
   By examining the locations of central black holes in two elliptical
   galaxies, M\,32 and M\,87, we derive constraints on the violation of
   the strong equivalence principle for purely gravitational objects,
-  {\em i.e. black holes}, of less than eight percent, $|\eta_N|<0.08$
+  {\em i.e. black holes}, of less than about one quarter,
+  $-0.53<\eta_N<0.26$
   from M\,32 from using the best determined distances to M\,31 and
   M\,32.  If M\,31 and M\,32 have the maximal relative separation
   allowed within the uncertainties of \citet{2006AJ....131.1405K}, the
-  limit is much weaker with $|\eta_N|<5.9$.  The constraints from
+  limit is much weaker with $\eta_N<0.99$.  The constraints from
   M\,87 are substantially weaker but could improve dramatically with
   better astrometry.
 \end{abstract}
@@ -166,44 +167,44 @@ elliptical galaxies
 \end{equation}
 where $R_\mathrm{eff}$, the half-light radius in projection is
 approximately $1.8153 a$.  We take the black hole mass to be
-$m_\bullet = 0.005 m$ where $m$ is the mass of the small system, we
-find that
+$m_\bullet$ to be much less than that of the small system.  However,
+within a small region near the black hole, the mass of the black hole
+dominates that of the stars.  We will take the mass of the stars
+within this sphere of influence to be $\alpha m_\bullet$ where
+$\alpha\approx 1$.  Now if the black hole is displaced from the centre
+by violation of the equivalence principle, Eq.~\ref{eq:3}, then we
+assume that these stars will be displaced with the black hole and
+remained centred on the black hole with a Hernquist distribution of
+density, Eq.~\ref{eq:4}.  On the other hand, we will assume that the
+rest of the galaxy will remained centred on the undisplaced position
+of the black hole.  Of course, there will be a smooth transition
+between these two regimes, but this approximation contains the
+essential point that the cusp of stars at the centre of the galaxy
+will remain centred on the black hole.  By numerically integrating
+over the gravitational potential energy of this configuration
+we find 
 \begin{equation}
-  \omega^2 \approx \frac{Gm}{a^3}
+  \omega^2 \approx 0.30 \left ( \frac{m}{\alpha m_\bullet} \right )^{1/2} \frac{Gm}{a^3}
   \label{eq:5}
 \end{equation}
-from n-body simulations that treat the perturbation of the stellar system
-by the black hole in a self-consistent manner. In these simulations we
-find that small perturbations of the black hole from the centre result
-in sinusoidal oscillations with this typical frequency, regardless of
-the number of particles and the softening length adopted, and the
-amplitude of the perturbation as long as it is smaller than the black
-hole's sphere of influence.  For such small perturbations the black
-hole pulls the neighbouring stars along with it. The half-mass radius
-of the Hernquist model is $a/(\sqrt{2}-1)$ so the typical frequency
-within the half-mass radius is
-\begin{equation}
-  \omega^2 = \frac{4\pi}{8} (\sqrt{2}-1)^3 \frac{G m}{a^3} \approx
-  0.11 \frac{Gm}{a^3}.
-  \label{eq:6}
-\end{equation}
-The oscillation frequency of the black hole is significantly larger
-than the typical frequency of the system because the black hole lies
-near the centre of the galaxy where typical density is larger.  On the
-other hand, if one directly used Eq.~(\ref{eq:4}) to calculate the
-restroring force toward the centre, one would find that it is constant
-with displacement from the centre.  This would assume that the density
-is actually singular at the centre but also would neglect the effect
-of the black hole on the neighbouring stars which would be dragged
-with it. We will compare this estimate with the detailed
-measurements of the potential near the core of the elliptical galaxy,
-M\,87, and find good agreement.
+where the coefficient comes from the numerical integration and the scaling comes
+from considering the structure of the Hernquist model at small radii.
 
-If we assume that the black hole lies within a bulge and
+If one directly used Eq.~(\ref{eq:4}) to calculate the restroring
+force toward the centre, one would find that it is constant with
+displacement from the centre.  This would assume that the density is
+actually singular at the centre but also would neglect the effect of
+the black hole on the neighbouring stars which would be dragged with
+it.  We will compare this estimate with the detailed measurements of
+the potential near the core of the elliptical galaxy, M\,87, and find
+good agreement.
+
+We will take $\alpha=1$ and $m_\bullet=0.005m$ where 
+$m$ is the mass of a bulge and
 halo approximately modelled by a Hernquist model \citep[as
   in][]{1997ApJ...487..153V}, we find that
 \begin{equation}
-  \frac{x}{d} = 
+  \frac{x}{d} = 0.24 
 \frac{\Delta}{1-\Delta} \frac{M}{d^3} \frac{a^3}{m},
   \label{eq:13}
 \end{equation}
@@ -212,7 +213,7 @@ sizes of the various bodies and the angular displacement does not
 depend on the distance to the systems from Earth.  We can make this
 explicit by calculating the apparent displacement across the sky as
 \begin{equation}
-  \Delta \theta = \frac{\Delta}{1-\Delta} \frac{M}{\delta^2} \frac{\alpha^3}{m} \cos^3 i
+  \Delta \theta = 0.24 \frac{\Delta}{1-\Delta} \frac{M}{\delta^2} \frac{\alpha^3}{m} \cos^3 i
 \end{equation}
 where $i$ is the inclination of the line connecting the two bodies
 with respect to the plane of the sky, $\delta$ is the angular distance
@@ -281,17 +282,17 @@ Eq.~(\ref{eq:1}),
 For the galaxy M\,32 we take $m=8 \times 10^8 \msun$ and
 $R_\mathrm{eff} = 100$~pc so $a=55$~pc and
 \begin{equation}
-  x = 0.38 \frac{\Delta}{1-\Delta} \mathrm{pc}
+  x = 0.091 \frac{\Delta}{1-\Delta} \mathrm{pc}
   \label{eq:8}
 \end{equation}
 or
 \begin{equation}
-  \Delta \theta = \frac{x}{d_\mathrm{M32-Sun}} = 0.12 \frac{\Delta}{1-\Delta} \mathrm{arcseconds},
+  \Delta \theta = \frac{x}{d_\mathrm{M32-Sun}} = 0.0288 \frac{\Delta}{1-\Delta} \mathrm{arcseconds},
   \label{eq:9}
 \end{equation}
 so if M\,32 lies indeed at the close to minimum distance to M\,31, the
 existing measurement of the position of the black hole yields a
-constraint of $\Delta < 0.81$.
+constraint of $\Delta < 0.95$.
 
 We can improve upon the astrometric constraint of
 \citet{2015arXiv150203231Y} if we assume that the position of the
@@ -323,11 +324,11 @@ cusp, yielding an estimate of the precision of 0.01~arcseconds.
 Furthermore, the centroid of the cusp and the outer regions also agree
 to within 0.01~arcseconds.  If we combine this constraint with the
 distance estimate of \citet{2006AJ....131.1405K}, this yields a
-constraint $|\Delta|<0.08$.  In fact the maximal distance between
+constraint $-0.53<\Delta<0.26$.  In fact the maximal distance between
 M\,31 and M\,32 consistent with the uncertainties given by
 \cite{2006AJ....131.1405K} is 45~kpc \citep[see also][for an
   alternative interpretation]{2014ApJ...788L..38D}.  In the case the
-constraints on $\Delta$ would be much weaker with $\Delta<0.75$.
+constraints on $\Delta$ would be much weaker with $\Delta<0.99$.
 
 The three smaller elliptical galaxies, NGC\,205, NGC\,147 and NGC\,185,
 have smaller mass densities and may have more favourable geometry.  However,
@@ -338,8 +339,8 @@ galaxies, NGC\,147 and NGC\,185 are each about 100~kpc from M31, so the
 enclosed halo mass is about $10^{12} \msun$.  This yields a
 typical value of the displacement of
 \begin{equation}
-  x = 2.3 \frac{\Delta}{1-\Delta} \mathrm{pc} ~\mathrm{and}~
-  \Delta \theta = 0.75 \frac{\Delta}{1-\Delta} \mathrm{arcseconds}.
+  x = 0.55 \frac{\Delta}{1-\Delta} \mathrm{pc} ~\mathrm{and}~
+  \Delta \theta = 0.18 \frac{\Delta}{1-\Delta} \mathrm{arcseconds}.
   \label{eq:12}.
 \end{equation}
 Although NGC\,205 may be somewhat closer to M~31 at 50~kpc than the
@@ -348,8 +349,7 @@ distance given by \citet{2006AJ....131.1405K} perhaps reducing the
 angular displacement by a factor of two counteracting the increased
 acceleration.  This yields a similar observed displacement.  If a SMBH
 is discovered near the centre of these galaxies and can be localised
-within 0.5~arcseconds, this would yield a constraint of $-2.0 < \Delta
-< 0.4$.
+within 0.5~arcseconds, this would yield a constraint of $\Delta<0.74$.
 
 On the other hand, NGC\,205 may lie at the same distance from
 us as M\,31. This is consistent with the errorbars given by
@@ -358,11 +358,11 @@ argue that NGC\,205 is interacting tidally with M\,31, favouring this
 interpretation.  At this minimum possible distance to M\,31 of about
 7~kpc, and we obtain a much larger linear and angular displacement
 \begin{equation}
-  x = 43. \frac{\Delta}{1-\Delta} \mathrm{pc} ~\mathrm{and}~
-  \Delta \theta = 13. \frac{\Delta}{1-\Delta} \mathrm{arcseconds}.
+  x = 10. \frac{\Delta}{1-\Delta} \mathrm{pc} ~\mathrm{and}~
+  \Delta \theta = 3.1 \frac{\Delta}{1-\Delta} \mathrm{arcseconds}.
 \end{equation}
-In this most favourable case the constraint would be $|\Delta| < 0.04$
-with 0.5-arcsecond astromety and $|\Delta|<8\times 10^{-3}$ with
+In this most favourable case the constraint would be $-0.19 < \Delta < 0.14$
+with 0.5-arcsecond astromety and $|\Delta|<3\times 10^{-3}$ with
 0.01-arcsecond astrometry.
 
 \section{Virgo Elliptical Galaxies}
@@ -384,7 +384,7 @@ the mass of M\,87 to be about $4\times 10^{12} \msun$
 containing M\,84 and M\,86 to be $10^{13} \msun$ at a distance of
 $1.3^\circ$. This yields a displacement of
 \begin{equation}
-  \Delta \theta = 0.08 \cos^3 i \frac{\Delta}{1-\Delta} 
+  \Delta \theta = 0.02 \cos^3 i \frac{\Delta}{1-\Delta} 
   \mathrm{arcseconds}.
   \label{eq:16}
 \end{equation}
@@ -485,12 +485,12 @@ displacement of the black hole due to SEP violation.  Using a distance
 to M\,87 of 16.4~Mpc \citep{2010A&A...524A..71B} and the same mass and
 angular distance to the subclump centred on M\,84 as earlier yields
 \begin{equation}
-  x = 4.6 \frac{\Delta}{1-\Delta} \cos^2 i ~\mathrm{pc}
+  x = 1.1 \frac{\Delta}{1-\Delta} \cos^2 i ~\mathrm{pc}
   \label{eq:18}
 \end{equation}
 and
 \begin{equation}
-    \Delta \theta = 0.06 \frac{\Delta}{1-\Delta} \cos^3 i~
+    \Delta \theta = 0.014 \frac{\Delta}{1-\Delta} \cos^3 i~
     \mathrm{arcseconds}
     \label{eq:17}
 \end{equation}
@@ -592,7 +592,7 @@ found with M~32 because the surface brightness profile of M\,87 is
 much shallower.  The isophotes constrain the deviation of the black
 hole from the centre of the potential within 0.03~arcseconds, yielding
 a constraint on the violation of the SEP for black holes of
-$-1<\Delta<0.3$, assuming the more conservative displacement estimate
+$\Delta<0.68$, assuming the more conservative displacement estimate
 Eq.~(\ref{eq:17}) and a favourable geometry of $i\approx 0^\circ$.
 Using additional images, more sophisticated isophote fitting procedure
 and more detailed modelling of the mass distribution of the Virgo
@@ -673,15 +673,15 @@ wavelengths.  In
 %%% LH
 principle 
 %%% LH
-one could find tighter constraints on the
-deviation of the black hole from the centre of the potential.  In the
-case of M\,32 the existing constraints are just 0.5~arcseconds because
-one has to link the radio coordinate system to the visual one.  These
-could possibly be improved dramatically with further observations.
-The visual core of M\,32 lies within 0.01~arcseconds of the centroid
-of the outer isophotes of the galaxy, indicating that if the black
-hole is coincident with the core, $|\eta_N|<0.08$, competitive with the
-results from pulsar timing \citep{Stairs:2005}.
+one could find tighter constraints on the deviation of the black hole
+from the centre of the potential.  In the case of M\,32 the existing
+constraints are just 0.5~arcseconds because one has to link the radio
+coordinate system to the visual one.  These could possibly be improved
+dramatically with further observations.  The visual core of M\,32 lies
+within 0.01~arcseconds of the centroid of the outer isophotes of the
+galaxy, indicating that if the black hole is coincident with the core,
+$-0.53<\eta_N<0.26$, competitive with the results from pulsar timing
+\citep{Stairs:2005}.
 
 Furthermore, the discovery of a supermassive black hole in one of the
 other elliptical satellites of M\,31 could provide stronger
@@ -734,8 +734,9 @@ Inc. under NASA contract NAS5-26555 and accessed through the Hubble
 Legacy Archive. These observations are associated with proposal
 GO-11714 (PI: Bond) and GO-12989 (PI: Renzini).  This work was
 supported by the Natural Sciences and Engineering Research Council of
-Canada, the Canadian Foundation for Innovation, the British
-Columbia Knowledge Development Fund, the Department of Energy
+Canada, the Canadian Foundation for Innovation, the British Columbia
+Knowledge Development Fund, the Bertha and Louis Weinstein Research
+Fund at the University of British Columbia, the Department of Energy
 and NASA. LH thanks Henry Tye and the HKUST Institute for Advanced
 Study for hospitality.
 
