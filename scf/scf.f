@@ -652,14 +652,14 @@ C            -------
               CALL plgndrv(nbodies,l-1,m,dblfact,x,dplm,temp2,plm1m)
 C                  -------
            ELSE
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 100 k=1,nbodies
                  plm1m(k)=0.0
  100          CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ENDIF
 
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 110 k=1,nbodies
               IF(x(k).NE.1.0.and.x(k).NE.-1.0) THEN
                  dplm(k)=(l*x(k)*plm(k)-(l+m)*plm1m(k))/
@@ -686,7 +686,7 @@ C                  -------
                  ENDIF
               ENDIF
  110       CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         ENDIF
 
@@ -941,13 +941,13 @@ C=======================================================================
 C   Loop over all spatial coordinates for all bodies.
 C   -------------------------------------------------
   
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 10 p=1,nbodies
            vx(p)=vx(p)+0.5*dtime*ax(p)
            vy(p)=vy(p)+0.5*dtime*ay(p)
            vz(p)=vz(p)+0.5*dtime*az(p)
  10     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
 C   Update velocity time, system time.
 C   ----------------------------------
@@ -1221,7 +1221,7 @@ C=======================================================================
 
         cpux=SECOND()
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 30 i=1,nbodies
            mtot=mtot+mass(i)
            xcm=xcm+mass(i)*x(i)
@@ -1238,7 +1238,7 @@ C=======================================================================
            ektot=ektot+0.5*mass(i)*(vx(i)**2+vy(i)**2+vz(i)**2)
            clausius=clausius+mass(i)*(x(i)*ax(i)+y(i)*ay(i)+z(i)*az(i))
  30     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         xcm=xcm/mtot
         ycm=ycm/mtot
@@ -1395,58 +1395,58 @@ C=======================================================================
         IF(l.EQ.m.OR.l.EQ.m+1) THEN
 
            IF(m.EQ.0) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 20 k=1,nbodies
                  plm(k)=1.0
  20           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ELSE
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 30 k=1,nbodies
                  plm(k)=(-1.)**m*dblfact(m)*SQRT(1.-x(k)*x(k))**m
  30           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ENDIF
 
            IF(l.EQ.m+1) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 40 k=1,nbodies
                  plm(k)=plm(k)*x(k)*(2.*m+1.)
  40           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ENDIF
 
         ELSE
 
            IF(m.EQ.0) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 50 k=1,nbodies
                  plm2m(k)=1.0
  50           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ELSE
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 60 k=1,nbodies
                  plm2m(k)=(-1.)**m*dblfact(m)*SQRT(1.-x(k)*x(k))**m
  60           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ENDIF
 
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 70 k=1,nbodies
               plm1m(k)=plm2m(k)*x(k)*(2.*m+1.)
  70        CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
            DO 90 i=m+2,l
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 80 k=1,nbodies
                  plm(k)=(x(k)*(2.*i-1.)*plm1m(k)-(i+m-1.)*plm2m(k))/
      &                  (i-m)
                  plm2m(k)=plm1m(k)
                  plm1m(k)=plm(k)
  80           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
  90        CONTINUE
 
         ENDIF
@@ -1527,13 +1527,13 @@ C=======================================================================
 C   Loop over all spatial coordinates for all bodies.
 C   -------------------------------------------------
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 10 p=1,nbodies
            x(p)=x(p)+vx(p)*dtime
            y(p)=y(p)+vy(p)*dtime
            z(p)=z(p)+vz(p)*dtime
  10     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
 C   Update position time, system time.
 C   ----------------------------------
@@ -1570,14 +1570,14 @@ C=======================================================================
 C            -------
         CALL accpot
 C     add the black hole
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 5 i=1,nbodies
            tmp=1D-4*n/r(i)**3
            ax(i)=ax(i)-dum*x(i)
            ay(i)=ay(i)-dum*y(i)
            az(i)=az(i)-dum*z(i)
  5      CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
 C            ------
         IF(fixacc) CALL corracc
@@ -1617,13 +1617,13 @@ C=======================================================================
 C   Loop over all velocity components for all bodies.
 C   -------------------------------------------------
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 10 p=1,nbodies
            vx(p)=vx(p)+ax(p)*dtime
            vy(p)=vy(p)+ay(p)*dtime
            vz(p)=vz(p)+az(p)*dtime
  10     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
 C   Update velocity time, system time.
 C   ----------------------------------
@@ -1735,38 +1735,38 @@ C=======================================================================
         twoalpha=2.0*alpha
 
         IF(n.EQ.0) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 20 k=1,nbodies
               ultrasp(k)=1.0
  20        CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
         ELSE
            IF(n.EQ.1) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 30 k=1,nbodies
                  ultrasp(k)=twoalpha*xi(k)
  30           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ELSE
 
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 40 k=1,nbodies
                  unm1(k)=1.0
                  un(k)=twoalpha*xi(k)
  40           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
               DO 60 i=1,n-1
                  c1=2.*(i+alpha)
                  c2=i+twoalpha-1.
                  c3=1./(i+1.)
-!     $omp parallel do
+!$OMP PARALLEL DO
                  DO 50 k=1,nbodies
                     ultrasp(k)=(c1*xi(k)*un(k)-c2*unm1(k))*c3
                     unm1(k)=un(k)
                     un(k)=ultrasp(k)
  50              CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
  60           CONTINUE
 
            ENDIF
@@ -1796,48 +1796,48 @@ C=======================================================================
         twoalpha=2.0*alpha
 
         IF(n.EQ.0) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 20 k=1,nbodies
               ultrasp(k)=1.0
               ultrasp1(k)=0.0
  20        CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
         ELSE
            IF(n.EQ.1) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 30 k=1,nbodies
                  ultrasp(k)=twoalpha*xi(k)
                  ultrasp1(k)=1.0
  30           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            ELSE
 
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 40 k=1,nbodies
                  unm1(k)=1.0
                  un(k)=twoalpha*xi(k)
  40           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
               DO 60 i=1,n-1
                  c1=2.*(i+alpha)
                  c2=i+twoalpha-1.
                  c3=1./(i+1.)
-!     $omp parallel do
+!$OMP PARALLEL DO
                  DO 50 k=1,nbodies
                     ultrasp(k)=(c1*xi(k)*un(k)-c2*unm1(k))*c3
                     unm1(k)=un(k)
                     un(k)=ultrasp(k)
  50              CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
  60           CONTINUE
 
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 70 k=1,nbodies
                  ultrasp1(k)=((twoalpha+n-1.)*unm1(k)-n*xi(k)*
      &                       ultrasp(k))/(twoalpha*(1.-xi(k)*xi(k)))
  70           CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
            ENDIF
         ENDIF
