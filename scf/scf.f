@@ -244,7 +244,7 @@ C=======================================================================
 
         ENDIF
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 30 k=1,nbodies
            r(k)=SQRT(x(k)**2+y(k)**2+z(k)**2)
            phi(k)=ATAN2(y(k),x(k))
@@ -255,7 +255,7 @@ C=======================================================================
            ath(k)=0.0
            aphi(k)=0.0
  30     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
         
         DO 60 l=0,lmax
            DO 50 m=0,l
@@ -268,23 +268,23 @@ C=======================================================================
 
         DO 118 l=lmin,lmax,lskip
         
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 110 k=1,nbodies
               temp5(k)=r(k)**l/((1.+r(k))**(2*l+1))*mass(k)
  110       CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
            DO 116 m=0,l
 
               CALL plgndrv(nbodies,l,m,dblfact,costh,temp1,temp2,plm)
 C                  -------
 
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 111 k=1,nbodies
                  ttemp5=temp5(k)*plm(k)*coeflm(l,m)
                  temp3(k)=ttemp5*SIN(m*phi(k))
                  temp4(k)=ttemp5*COS(m*phi(k))
  111          CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
               DO 114 n=0,nmax
 
@@ -292,12 +292,12 @@ C                  -------
 C                     -------
      &                        ultrasp)
 
-!     $omp parallel do
+!$OMP PARALLEL DO
                  DO 112 k=1,nbodies
                     sinsum(n,l,m)=sinsum(n,l,m)+temp3(k)*ultrasp(k)
                     cossum(n,l,m)=cossum(n,l,m)+temp4(k)*ultrasp(k)
  112             CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
                  sinsum(n,l,m)=sinsum(n,l,m)*anltilde(n,l)
                  cossum(n,l,m)=cossum(n,l,m)*anltilde(n,l)
@@ -311,14 +311,14 @@ C                                     ------
 
         DO 190 l=lmin,lmax,lskip
 
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 126 k=1,nbodies
               temp3(k)=0.0
               temp4(k)=0.0
               temp5(k)=0.0
               temp6(k)=0.0
  126       CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
            DO 180 m=0,l
 
@@ -326,14 +326,14 @@ C                                     ------
 C                  --------
      &                      dplm)
 
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 130 k=1,nbodies
                  clm(k)=0.0
                  dlm(k)=0.0
                  elm(k)=0.0
                  flm(k)=0.0
  130          CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
               DO 150 n=0,nmax
 
@@ -341,17 +341,17 @@ C                  --------
 C                     --------
      &                         ultrasp,ultrasp1)
 
-!     $omp parallel do
+!$OMP PARALLEL DO
                  DO 140 k=1,nbodies
                     clm(k)=clm(k)+ultrasp(k)*cossum(n,l,m)
                     dlm(k)=dlm(k)+ultrasp(k)*sinsum(n,l,m)
                     elm(k)=elm(k)+ultrasp1(k)*cossum(n,l,m)
                     flm(k)=flm(k)+ultrasp1(k)*sinsum(n,l,m)
  140             CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
  150          CONTINUE
 
-!     $omp parallel do
+!$OMP PARALLEL DO
               DO 170 k=1,nbodies
                  cmphi=COS(m*phi(k))
                  smphi=SIN(m*phi(k))
@@ -360,10 +360,10 @@ C                     --------
                  temp5(k)=temp5(k)-dplm(k)*(clm(k)*cmphi+dlm(k)*smphi)
                  temp6(k)=temp6(k)-m*plm(k)*(dlm(k)*cmphi-clm(k)*smphi)
  170          CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
  180       CONTINUE
 
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 183 k=1,nbodies
               phinltil=r(k)**l/((1.+r(k))**(2*l+1))
               pot(k)=pot(k)+temp3(k)*phinltil
@@ -372,11 +372,11 @@ C                     --------
               ath(k)=ath(k)+temp5(k)*phinltil
               aphi(k)=aphi(k)+temp6(k)*phinltil
  183       CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
  190    CONTINUE
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 200 k=1,nbodies
            sinth=SQRT(1.-costh(k)**2)
            pot(k)=pot(k)*G
@@ -392,7 +392,7 @@ C                     --------
            ay(k)=ayt
            az(k)=azt
  200    CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         RETURN
         END
@@ -416,7 +416,7 @@ C=======================================================================
 
 C=======================================================================
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 10 k=1,nbodies
            r(k)=SQRT(x(k)**2+y(k)**2+z(k)**2)
            ax(k)=ax(k)-G*x(k)/(r(k)*(1.+r(k))**2)
@@ -424,7 +424,7 @@ C=======================================================================
            az(k)=az(k)-G*z(k)/(r(k)*(1.+r(k))**2)
            potext(k)=potext(k)-G/(1.+r(k))
  10     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         RETURN
         END
@@ -453,21 +453,21 @@ C=======================================================================
 C               -------
         ENDIF
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 5 i=1,nbodies
            potext(i)=0.0
  5      CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         IF(.NOT.selfgrav) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 10 i=1,nbodies
               ax(i)=0.0
               ay(i)=0.0
               az(i)=0.0
               pot(i)=0.0
  10        CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
            CALL accp_LHa
 C               --------
@@ -547,26 +547,26 @@ C=======================================================================
         azcm=0.0
         mtot=0.0
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 10 i=1,nbodies
            mtot=mtot+mass(i)
            axcm=axcm+mass(i)*ax(i)
            aycm=aycm+mass(i)*ay(i)
            azcm=azcm+mass(i)*az(i)
  10     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         axcm=axcm/mtot
         aycm=aycm/mtot
         azcm=azcm/mtot
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 20 i=1,nbodies
            ax(i)=ax(i)-axcm
            ay(i)=ay(i)-aycm
            az(i)=az(i)-azcm
  20     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
         RETURN
         END
@@ -606,13 +606,13 @@ C   -------------------------------------------------
            rcsign=1.
         ENDIF
 
-!     $omp parallel do
+!$OMP PARALLEL DO
         DO 10 p=1,nbodies
            vx(p)=vx(p)+rcsign*ax(p)*0.5*dtime
            vy(p)=vy(p)+rcsign*ay(p)*0.5*dtime
            vz(p)=vz(p)+rcsign*az(p)*0.5*dtime
  10     CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
 
 C   Update velocity time, system time.
 C   ----------------------------------
@@ -642,11 +642,11 @@ C=======================================================================
 C            -------
 
         IF(l.EQ.0) THEN
-!     $omp parallel do
+!$OMP PARALLEL DO
            DO 10 k=1,nbodies
               dplm(k)=0.0
  10        CONTINUE
-!     $omp end parallel do
+!$OMP END PARALLEL DO
         ELSE
            IF(l.NE.m) THEN
               CALL plgndrv(nbodies,l-1,m,dblfact,x,dplm,temp2,plm1m)
