@@ -1,4 +1,5 @@
 
+      
 
 C***********************************************************************
 C
@@ -546,9 +547,14 @@ C=======================================================================
         aycm=0.0
         azcm=0.0
         mtot=0.0
+C     Don't let the first particle move
+        ax(1)=0
+        ay(1)=0
+        az(1)=0
 
+C     Calculate the CM of the rest of the particles
 !$OMP PARALLEL DO
-        DO 10 i=1,nbodies
+        DO 10 i=2,nbodies
            mtot=mtot+mass(i)
            axcm=axcm+mass(i)*ax(i)
            aycm=aycm+mass(i)*ay(i)
@@ -560,8 +566,9 @@ C=======================================================================
         aycm=aycm/mtot
         azcm=azcm/mtot
 
+C     Zero out the CM motion of the rest of the particles
 !$OMP PARALLEL DO
-        DO 20 i=1,nbodies
+        DO 20 i=2,nbodies
            ax(i)=ax(i)-axcm
            ay(i)=ay(i)-aycm
            az(i)=az(i)-azcm
@@ -1256,7 +1263,7 @@ C=======================================================================
         WRITE(ulog,120) mtot
         WRITE(ulog,120) xcm,ycm,zcm
         WRITE(ulog,120) vxcm,vycm,vzcm
-        WRITE(ulog,120) lxtot,lytot,lztot
+        WRITE(ulog,120) lxtot,lytot,lztot,x(1),mass(1)
         WRITE(ulog,120) ektot,eptot,epselfg,etot
         WRITE(ulog,120) m2tw,clausius,m2claus
         WRITE(ulog,120) cpux-cputime
@@ -1569,15 +1576,17 @@ C=======================================================================
         CALL steppos
 C            -------
         CALL accpot
-C     add the black hole
-!$OMP PARALLEL DO
-        DO 5 i=1,nbodies
-           tmp=1D-4*n/r(i)**3
-           ax(i)=ax(i)-dum*x(i)
-           ay(i)=ay(i)-dum*y(i)
-           az(i)=az(i)-dum*z(i)
- 5      CONTINUE
-!$OMP END PARALLEL DO
+C        
+C     adjust the black hole mass and position (first particle)
+C        
+C     grow the BH for 50000 steps --- final mass is exp(10)*initial
+        if (n .lt. 50000) then
+           mass(1)=mass(1)*(1.0002)
+C     now move the BH away from the centre
+        else
+           x(1)=x(1)*(1.0002)
+        endif
+C     
 
 C            ------
         IF(fixacc) CALL corracc

@@ -7,8 +7,15 @@ for f in sys.argv[1:]:
     r2=x*x+y*y+z*z
     r=r2**0.5
     rs=np.sort(r)
-    i=np.arange(0,len(rs),1000)
+    step=len(rs)/32
+    i=np.arange(0,len(rs),step)
     
-    plt.plot(np.log10(rs[i+5]),np.log10((rs[i+9]-rs[i])/rs[i+5]**2))
+    plt.plot(np.log10(rs[i+step/2]),
+             -np.log10(rs[i-1+step]-rs[i])-2*np.log10(rs[i+step/2]))
+
+#    plt.plot(np.log10(rs),np.log10(np.linspace(1,len(rs),len(rs))))
     
+plt.plot(np.log10(rs),-np.log10(rs)-3*np.log10(rs+1)+1.9)
+plt.xlim(-1.5,3)
+plt.ylim(-10,3)
 plt.show()

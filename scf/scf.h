@@ -18,7 +18,7 @@ C=======================================================================
  
 cXXX	want 1,000,000, 6+, 0 for our runs
 
-        PARAMETER(nbodsmax=100000,nmax=6,lmax=0)
+        PARAMETER(nbodsmax=100000,nmax=6,lmax=6)
 
         CHARACTER*50 headline
         INTEGER nsteps,noutbod,nbodies,noutlog,irsort

@@ -1,9 +1,9 @@
 C**********Basic input parameters**********
 expansion test   headline
-10000            nsteps
-100              noutbod
-10               noutlog
- 0.125            dteps
+100000           nsteps
+10000             noutbod
+100               noutlog
+ 0.0125            dteps
  1.0             G
 .TRUE.          selfgrav
 .FALSE.          inptcoef
