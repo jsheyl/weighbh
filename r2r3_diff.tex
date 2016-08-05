@@ -1,4 +1,7 @@
 \documentclass[useAMS,usenatbib]{mn2e}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL weighbh_r2.tex   Thu Aug  4 11:07:27 2016
+%DIF ADD weighbh.tex      Fri Aug  5 10:25:51 2016
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{tikz}
@@ -22,7 +25,25 @@
 $^{1}$Department of Physics and Astronomy, University of British
   Columbia, 6224 Agricultural Road, Vancouver, BC V6T 1Z1, Canada\\
   $^{2}$Physics Department, Institute for Strings, Cosmology, and Astroparticle Physics, Columbia University, New York, NY 10027, USA}
-
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
 
 \begin{document}
 \date{Accepted ---. Received ---; in original form ---}
@@ -37,15 +58,24 @@ $^{1}$Department of Physics and Astronomy, University of British
   By examining the locations of central black holes in two elliptical
   galaxies, M\,32 and M\,87, we derive constraints on the violation of
   the strong equivalence principle for purely gravitational objects,
-  {\em i.e. black holes}, of less than about two-thirds, $\eta_N<0.68$
-  from the gravitational interaction of M\,87 with its neighbours in
-  the Virgo cluster.  Although M\,32 appears to be a good candidate
+  {\em i.e. black holes}, of less than about \DIFdelbegin \DIFdel{one quarter, $-0.53<\eta_N<0.26$
+  from }\DIFdelend \DIFaddbegin \DIFadd{two-thirds, $\eta_N<0.68$
+  from the gravitational interaction of }\DIFaddend M\,\DIFdelbegin \DIFdel{32 from using the best determined distances to }\DIFdelend \DIFaddbegin \DIFadd{87 with its neighbours in
+  the Virgo cluster.  Although }\DIFaddend M\,\DIFdelbegin \DIFdel{31 and
+  M}%DIFDELCMD < \,%%%
+\DIFdel{32.  If M}%DIFDELCMD < \,%%%
+\DIFdel{31 and M}%DIFDELCMD < \,%%%
+\DIFdelend 32 \DIFdelbegin \DIFdel{have the maximal relative separation
+  allowed within the uncertainties of \mbox{%DIFAUXCMD
+\citet{2006AJ....131.1405K}
+}%DIFAUXCMD
+, the limit is much weaker with $\eta_N<0.99$.  The constraintsfrom
+  }\DIFdelend \DIFaddbegin \DIFadd{appears to be a good candidate
   for this technique, the high concentration of stars near its centre
   substantially weakens the constraints.  On the other hand, if a
   central black hole is found in NGC~205 or one of the other satellite
-  ellipticals of M\,31, substantially better constraints could be
-  obtained. In all cases the constraints could improve dramatically
-  with better astrometry.
+  ellipticals of }\DIFaddend M\,\DIFdelbegin \DIFdel{87 are substantially weaker but could }\DIFdelend \DIFaddbegin \DIFadd{31, substantially better constraints could be obtained. In all
+  case the constraints could }\DIFaddend improve dramatically with better astrometry.
 \end{abstract}
 
 \section{Introduction}
@@ -83,7 +113,7 @@ In particular we will examine the polarization of the orbits of
 supermassive black holes through the central regions of elliptical
 galaxies.  We will focus on elliptical galaxies because the presence
 of central black holes is common in sufficiently large elliptical
-galaxies and the location of the bottom of the gravitational potential
+galaxies and the location of the bottom of the \DIFdelbegin \DIFdel{graviational }\DIFdelend \DIFaddbegin \DIFadd{gravitational }\DIFaddend potential
 is straightforward to constrain by determining the centroid of the
 distribution of stellar light.  Interactions between galaxies are
 ubiquitous, so example systems are straightforward to find.  In
@@ -126,10 +156,10 @@ contribution of gravitational energy,
   \frac{m_\mathrm{Gp}}{m_\mathrm{I}} = 1- \eta_N \frac{U_\mathrm{G}}{mc^2}.
   \label{eq:14}
 \end{equation}
-In the context of the parametrized post-Newtonian treatment of
+In the context of the \DIFdelbegin \DIFdel{parameterized }\DIFdelend \DIFaddbegin \DIFadd{parametrized }\DIFaddend post-Newtonian treatment of
 deviations from general relativity \citep{Will:lrr},
 \begin{equation}
-  \eta_{N} =4\beta - \gamma - 3 - \frac{10}{3} \xi - \alpha_1 +
+  \eta_{N} =4\DIFdelbegin \DIFdel{\betaâ}\DIFdelend \DIFaddbegin \DIFadd{\beta - }\DIFaddend \gamma \DIFdelbegin \DIFdel{âˆ’ 3â}\DIFdelend \DIFaddbegin \DIFadd{- 3 - }\DIFaddend \frac{10}{3} \xi - \alpha_1 +
   \frac{2}{3} \alpha_2 - \frac{2}{3} \zeta_1 - \frac{1}{3} \zeta_2.
 \end{equation}
 For the case of a black hole, $U_\mathrm{G} = mc^2$ so
@@ -140,7 +170,7 @@ stellar system in which it resides.  Furthermore, dynamical friction
 with the less massive stars nearby damps any motion of the black hole
 relative to its equilibrium position on a short time scale, so absent
 SEP violation or rare astrophysical effects such as a recent merger or
-asymmetric jets the black hole should lie at the bottom of the
+\DIFdelbegin \DIFdel{asymetric }\DIFdelend \DIFaddbegin \DIFadd{asymmetric }\DIFaddend jets the black hole should lie at the bottom of the
 gravitational potential well.  The effects of individual stellar
 encounters, Brownian motion, are much smaller than what we discuss
 here \citep{2011ApJ...735...57B}.
@@ -191,8 +221,9 @@ we find
 where the coefficient comes from the numerical integration and the scaling comes
 from considering the structure of the Hernquist model at small radii.
 
-If one directly used Eq.~(\ref{eq:4}) to calculate the restoring
-force toward the centre, one would find that it is constant with
+If one directly used Eq.~(\ref{eq:4}) to calculate the \DIFdelbegin \DIFdel{restroring
+}\DIFdelend \DIFaddbegin \DIFadd{restoring
+}\DIFaddend force toward the centre, one would find that it is constant with
 displacement from the centre.  This would assume that the density is
 actually singular at the centre but also would neglect the effect of
 the black hole on the neighbouring stars which would be dragged with
@@ -299,11 +330,11 @@ We can improve upon the astrometric constraint of
 \citet{2015arXiv150203231Y} if we assume that the position of the
 black hole is coincident with the cusp in the surface brightness of
 the galaxy.  This is a reasonable assumption because the black hole
-would entrain the neighbouring stars, so the stellar nucleus should be
-centred on the black hole. To measure the possible deviation of the
+would entrain the \DIFdelbegin \DIFdel{neighboring }\DIFdelend \DIFaddbegin \DIFadd{neighbouring }\DIFaddend stars, so the stellar nucleus should be
+\DIFdelbegin \DIFdel{centered }\DIFdelend \DIFaddbegin \DIFadd{centred }\DIFaddend on the black hole. To measure the possible deviation of the
 position of the black hole on the sky and the centre of the potential
 well of the galaxy we use images from the Wide-Field Camera 3 (WFC3)
-on the Hubble Space Telescope (HST) in the filter, F555W.  This
+on the Hubble Space \DIFdelbegin \DIFdel{Telscope }\DIFdelend \DIFaddbegin \DIFadd{Telescope }\DIFaddend (HST) in the filter, F555W.  This
 instrument features 0.04~arcsecond pixels and a $162 \times
 162$-arcsecond field of view.  Both the Space Telescope Imaging
 Spectrograph (STIS) and the planetary camera on Wide-Field Planetary
@@ -320,7 +351,7 @@ The centres of the annuli are initially roughly placed within about an
 arcsecond of the core and updated to lie on the calculated
 centroid. This is iterated thirty times.  The centroids of the various
 annuli to probe the galactic potential coincide to within
-0.01~arcseconds as do the ellipses and circles centred on the stellar
+0.01~arcseconds as do the ellipses and circles \DIFdelbegin \DIFdel{centered }\DIFdelend \DIFaddbegin \DIFadd{centred }\DIFaddend on the stellar
 cusp, yielding an estimate of the precision of 0.01~arcseconds.
 Furthermore, the centroid of the cusp and the outer regions also agree
 to within 0.01~arcseconds.  If we combine this constraint with the
@@ -331,13 +362,22 @@ M\,31 and M\,32 consistent with the uncertainties given by
   alternative interpretation]{2014ApJ...788L..38D}.  In the case the
 constraints on $\Delta$ would be much weaker with $\Delta<0.99$.
 
-Before we focus on the smaller elliptical galaxies of the M\,31
-system, we will examine the central region of M\,32 in further detail.
-\citet{1998AJ....116.2263L} deconvolved images with HST and WFPC-1 and
+\DIFaddbegin \DIFadd{Before we focus on the smaller elliptical galaxies of the M}\,\DIFadd{31
+system, we will examine the central region of M}\,\DIFadd{32 in further detail.
+\mbox{%DIFAUXCMD
+\citet{1998AJ....116.2263L}
+}%DIFAUXCMD
+deconvolved images with HST and WFPC-1 and
 WFPC-2 and found a very high central concentration of stars.
 Fig.~\ref{fig:M32-iso} depicts the surface brightness in the core of
-M\,32 from ground-based data \citep{1991A&A...243L..17M} and HST WFPC2
-images \citep{1998AJ....116.2263L} as well as the WFC3 images and the
+M}\,\DIFadd{32 from ground-based data \mbox{%DIFAUXCMD
+\citep{1991A&A...243L..17M}
+}%DIFAUXCMD
+and HST WFPC2
+images \mbox{%DIFAUXCMD
+\citep{1998AJ....116.2263L}
+}%DIFAUXCMD
+as well as the WFC3 images and the
 models that we are using in this paper.  We can see that the global
 Hernquist model that reflects the half-light radius of the galaxy of
 about 27~arcseconds dramatically underpredicts the light in the core
@@ -352,27 +392,36 @@ assumed to be about $4\times 10^6\msun$, still significantly smaller
 than the mass of the central Hernquist model, so we can apply the
 preceding analysis here but with the new parameters for the Hernquist
 model.
-\begin{figure}
+}\begin{figure}
   \includegraphics[width=\columnwidth]{iso}
-  \caption{The surface brightness in the core of M\,32 from
-    \citet{1998AJ....116.2263L}, \citet{1991A&A...243L..17M}
-    and the photometry and models used in this paper.  We assumed
-    $B-F555W=1$ to place the \citet{1991A&A...243L..17M} data
-    on this plot.}
+  \caption{\DIFaddFL{The surface brightness in the core of M}\,\DIFaddFL{32 from
+    \mbox{%DIFAUXCMD
+\citet{1998AJ....116.2263L}
+}%DIFAUXCMD
+, \mbox{%DIFAUXCMD
+\citet{1991A&A...243L..17M}
+}%DIFAUXCMD
+and the photometry and models used in this paper.  We assumed
+    $B-F555W=1$ to place the \mbox{%DIFAUXCMD
+\citet{1991A&A...243L..17M}
+}%DIFAUXCMD
+data
+    on this plot.}}
   \label{fig:M32-iso}
 \end{figure}
 
-If we examine Eq.~\ref{eq:5}, we see that the spring constant of the
-Hernquist model that best reflects the central region of M\,32 is
+\DIFadd{If we examine Eq.~\ref{eq:5}, we see that the spring constant of the
+Hernquist model that best reflects the central region of M}\,\DIFadd{32 is
 about 70 times larger than that of the model of the entire galaxy and
 the expected displacement is 70 times smaller,
-\begin{equation}
+}\begin{equation}\DIFadd{
   \Delta \theta = 0.4 \frac{\Delta}{1-\Delta} \textrm{milliarcseconds}.
-\end{equation}
-The current astrometry yields $\Delta \theta<10$~milliarcseconds,
+}\end{equation}
+\DIFadd{The current astrometry yields $\Delta \theta<10$~milliarcseconds,
 yielding a weaker constraint of $\Delta<0.96$.  
+}
 
-The three smaller elliptical galaxies, NGC\,205, NGC\,147 and NGC\,185,
+\DIFaddend The three smaller elliptical galaxies, NGC\,205, NGC\,147 and NGC\,185,
 have smaller mass densities and may have more favourable geometry.  However,
 SMBHs have not yet been identified in these galaxies.  Each of these
 galaxies has a mass of about $2 \times 10^8 \msun$ and a
@@ -415,7 +464,7 @@ Virgo A subcluster which contains the bulk of the mass of the Virgo
 Cluster, about $10^{14} \msun$.  The Virgo Cluster is still in the
 process of forming and contains at least two additional subclumps of
 masses of about $10^{13} \msun$.  The subclump closest to M\,87 is
-centred on M\,84 and M\,86 about $1.3^\circ$ away.  M\,89 is also a
+\DIFdelbegin \DIFdel{centered }\DIFdelend \DIFaddbegin \DIFadd{centred }\DIFaddend on M\,84 and M\,86 about $1.3^\circ$ away.  M\,89 is also a
 similar angular distance away, so this analysis applies to it as well,
 but it is likely to be less massive.
 
@@ -436,9 +485,10 @@ better fit by a ``core-S\'ersic'' model
 \citep{1968adga.book.....S,2004AJ....127.1917T} that has a much less
 cuspy central surface brightness distribution than a Hernquist model.
 The break radius between the core and the outer S\'ersic model is
-about 7~arcseconds.  Furthermore, in the core of M\,87 we have
+about 7~arcseconds.  \DIFaddbegin \DIFadd{Furthermore, in the core of M}\,\DIFadd{87 we have
 detailed kinematic data, so we can estimate the properties of the
 gravitational potential induced by the stars.
+}\DIFaddend 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
@@ -559,7 +609,7 @@ microarcsecond precision with microwave interferometry
 \citep{2011ApJ...735...57B}.  On the other hand, the centre of the
 potential well is best defined in the optical using the isophotes of
 the galaxy.  Fortunately, the supermassive black hole is also apparent
-in the optical.  The innermost isophotes will be centred on the black
+in the optical.  The innermost isophotes will be \DIFdelbegin \DIFdel{centered }\DIFdelend \DIFaddbegin \DIFadd{centred }\DIFaddend on the black
 hole because it will dominate the potential well, so the centres of
 more distant isophotes provide an estimate of the potential well that
 constrains the black hole.
@@ -585,7 +635,7 @@ is too weak to explain such a displacement.
 To measure the possible deviation of the position of the black hole on
 the sky and the centre of the potential well of the galaxy we use
 images from the Wide-Field Camera 3 (WFC3) on the Hubble Space
-Telescope (HST) in the ultraviolet filter, F275W.  We used images from
+\DIFdelbegin \DIFdel{Telscope }\DIFdelend \DIFaddbegin \DIFadd{Telescope }\DIFaddend (HST) in the ultraviolet filter, \DIFdelbegin \DIFdel{F225W}\DIFdelend \DIFaddbegin \DIFadd{F275W}\DIFaddend .  We used images from
 GO-12989 (PI: Renzini) with total exposure time of 5599~seconds as
 depicted in Fig.~\ref{fig:M87}.  To find the centre of the potential
 we 
@@ -608,13 +658,13 @@ the AGN itself.  This
 technique 
 %%% LH
 contrasts with that of
-\citet{2010ApJ...717L...6B}.  They explicitly masked the noticeable jet
+\citet{2010ApJ...717L...6B}.  They explicitly masked the \DIFdelbegin \DIFdel{noticable }\DIFdelend \DIFaddbegin \DIFadd{noticeable }\DIFaddend jet
 emission as well as globular clusters.  Here we remove a much larger
 region from the analysis both in the direction of the jet and the
 opposite direction.  This excludes both the observed jet and a wide
 regions around the jets.  The excluded region is symmetric, so we
 minimize any potential bias along the jet axis.  Furthermore, the
-measurements that we use are in F275W with a higher angular resolution
+measurements that we use are in \DIFdelbegin \DIFdel{F225W }\DIFdelend \DIFaddbegin \DIFadd{F275W }\DIFaddend with a higher angular resolution
 camera (WFC3 vs. ACS).  In this ultraviolet filter, the emission from
 globular clusters is negligible.  The centre of the annuli are
 initially roughly placed within about an arcsecond of the AGN and
@@ -644,7 +694,7 @@ cluster could possibly yield smaller constraints.
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{ds9.pdf}
-  \caption{Central region of M\,87 focusing on the AGN.  Several
+  \caption{Central region of M\,87 \DIFdelbeginFL \DIFdelFL{focussing }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{focusing }\DIFaddendFL on the AGN.  Several
     apertures to determine the centroid of the light are depicted.
     The two middle annuli lie from 9 to 15 arcseconds and 12 to 24
     arcseconds from the centre.  The inner apertures are circular and
@@ -691,8 +741,9 @@ we have
 %%% LH
 considered
 %%%LH 
-just the force on the black hole and the coterie
-of stars in its immediate gravitational influence.  Moving the black
+just the force on the black hole and the \DIFdelbegin \DIFdel{cotery
+}\DIFdelend \DIFaddbegin \DIFadd{coterie
+}\DIFaddend of stars in its immediate gravitational influence.  Moving the black
 hole from the centre of the stellar system will also move these stars,
 and we have used a simple model for their coupled motion.
 Additional study is warranted where one would start the black hole
@@ -717,19 +768,31 @@ coordinate system to the visual one.  These could possibly be improved
 dramatically with further observations.  The visual core of M\,32 lies
 within 0.01~arcseconds of the centroid of the outer isophotes of the
 galaxy, indicating that if the black hole is coincident with the core,
-$\eta_N<0.96$, using a density model adapted to fit the central
-regions of M\,32.  The discovery of a supermassive black hole in one
+\DIFdelbegin \DIFdel{$-0.53<\eta_N<0.26$, competitive with the results from pulsar timing
+\mbox{%DIFAUXCMD
+\citep{Stairs:2005}
+}%DIFAUXCMD
+.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{Furthermore, the }\DIFdelend \DIFaddbegin \DIFadd{$\eta_N<0.96$, using a density model adapted to fit the central
+regions of M}\,\DIFadd{32.  The }\DIFaddend discovery of a supermassive black hole in one
 of the other elliptical satellites of M\,31 could provide stronger
 constraints from the M\,31 system.  However, the main uncertainty in
-the constraints comes from the unknown geometry of the system and the
-central potential as we demonstrate for M\,32 in particular so further
-information on the relative distances and the central kinematics of
+the constraints comes from the unknown geometry of the system \DIFdelbegin \DIFdel{as we
+saw }\DIFdelend \DIFaddbegin \DIFadd{and the
+central potential as we demonstrate }\DIFaddend for M\,32 in particular so further
+information on the relative distances \DIFaddbegin \DIFadd{and the central kinematics }\DIFaddend of
 the various galaxies would yield better constraints on the results.
-Observations of the black hole in M\,87, the stellar kinematics near
+\DIFaddbegin \DIFadd{Observations of the black hole in M}\,\DIFadd{87, the stellar kinematics near
 the black hole and an assumption of a favourable geometry for the
 neighbouring galaxies within the Virgo cluster yields a constraint of
 $\eta_N<0.68$, competitive with the results from pulsar timing
-\citep{Stairs:2005}.  Perhaps other interacting and nearly interacting
+\mbox{%DIFAUXCMD
+\citep{Stairs:2005}
+}%DIFAUXCMD
+.  }\DIFaddend Perhaps other interacting and nearly interacting
 galaxies in the local Universe could also provide more information and
 would statistically limit the violation of SEP in the motion of black
 holes.
@@ -767,25 +830,22 @@ constraints
 %%% LH 
 on $\eta_N$ on the order of $10^{-4}$ might be possible.
 
-{\noindent \bf Acknowledgements}
+\DIFaddbegin {\noindent \bf \DIFadd{Acknowledgements}}
 
-This research is based on NASA/ESA Hubble Space Telescope observations
+\DIFaddend This research is based on NASA/ESA Hubble Space Telescope observations
 obtained at the Space Telescope Science Institute, which is operated
 by the Association of Universities for Research in Astronomy
 Inc. under NASA contract NAS5-26555 and accessed through the Hubble
-Legacy Archive which is a collaboration between the Space Telescope
-Science Institute (STScI/NASA), the Space Telescope European
-Coordinating Facility (ST-ECF/ESA) and the Canadian Astronomy Data
-Centre (CADC/NRC/CSA). These observations are associated with proposal
+Legacy Archive. These observations are associated with proposal
 GO-11714 (PI: Bond) and GO-12989 (PI: Renzini).  This work was
 supported by the Natural Sciences and Engineering Research Council of
 Canada, the Canadian Foundation for Innovation, the British Columbia
 Knowledge Development Fund, the Bertha and Louis Weinstein Research
 Fund at the University of British Columbia, the Department of Energy
 and NASA. LH thanks Henry Tye and the HKUST Institute for Advanced
-Study for hospitality.  The authors would also like to thank the
+Study for hospitality\DIFaddbegin \DIFadd{.  The authors would also like to thank the
 anonymous referee for detailed comments that improved the paper
-substantially.
+substantially}\DIFaddend .
 
 \bibliography{weighbh}
 \bibliographystyle{apj}

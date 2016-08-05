@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{35}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Adelberger}(2001)}]{2001CQGra..18.2397A}
@@ -73,6 +73,14 @@ Heyl, J.~S., Richer, H., Anderson, J., Fahlman, G., Dotter, A., Hurley, J.,
 
 \bibitem[{{Koch} \& {Grebel}(2006)}]{2006AJ....131.1405K}
 {Koch}, A. \& {Grebel}, E.~K. 2006, \aj, 131, 1405
+
+\bibitem[{{Lauer} {et~al.}(1998){Lauer}, {Faber}, {Ajhar}, {Grillmair}, \&
+  {Scowen}}]{1998AJ....116.2263L}
+{Lauer}, T.~R., {Faber}, S.~M., {Ajhar}, E.~A., {Grillmair}, C.~J., \&
+  {Scowen}, P.~A. 1998, \aj, 116, 2263
+
+\bibitem[{{Michard} \& {Nieto}(1991)}]{1991A&A...243L..17M}
+{Michard}, R. \& {Nieto}, J.-L. 1991, \aap, 243, L17
 
 \bibitem[{{Navarro} {et~al.}(1996){Navarro}, {Frenk}, \&
   {White}}]{1996ApJ...462..563N}
