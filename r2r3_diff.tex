@@ -1,7 +1,7 @@
 \documentclass[useAMS,usenatbib]{mn2e}
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL weighbh_r2.tex   Thu Aug  4 11:07:27 2016
-%DIF ADD weighbh.tex      Fri Aug  5 10:25:51 2016
+%DIF ADD weighbh.tex      Tue Sep 13 15:59:44 2016
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{tikz}
@@ -74,8 +74,9 @@ $^{1}$Department of Physics and Astronomy, University of British
   for this technique, the high concentration of stars near its centre
   substantially weakens the constraints.  On the other hand, if a
   central black hole is found in NGC~205 or one of the other satellite
-  ellipticals of }\DIFaddend M\,\DIFdelbegin \DIFdel{87 are substantially weaker but could }\DIFdelend \DIFaddbegin \DIFadd{31, substantially better constraints could be obtained. In all
-  case the constraints could }\DIFaddend improve dramatically with better astrometry.
+  ellipticals of }\DIFaddend M\,\DIFdelbegin \DIFdel{87 are substantially weaker but could }\DIFdelend \DIFaddbegin \DIFadd{31, substantially better constraints could be
+  obtained. In all cases the constraints could }\DIFaddend improve dramatically
+  with better astrometry.
 \end{abstract}
 
 \section{Introduction}
@@ -154,14 +155,17 @@ of an object could depend on its constitution and in particular the
 contribution of gravitational energy,
 \begin{equation}
   \frac{m_\mathrm{Gp}}{m_\mathrm{I}} = 1- \eta_N \frac{U_\mathrm{G}}{mc^2}.
-  \label{eq:14}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:14}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:3}
+\DIFaddend \end{equation}
 In the context of the \DIFdelbegin \DIFdel{parameterized }\DIFdelend \DIFaddbegin \DIFadd{parametrized }\DIFaddend post-Newtonian treatment of
 deviations from general relativity \citep{Will:lrr},
 \begin{equation}
   \eta_{N} =4\DIFdelbegin \DIFdel{\betaâ}\DIFdelend \DIFaddbegin \DIFadd{\beta - }\DIFaddend \gamma \DIFdelbegin \DIFdel{âˆ’ 3â}\DIFdelend \DIFaddbegin \DIFadd{- 3 - }\DIFaddend \frac{10}{3} \xi - \alpha_1 +
   \frac{2}{3} \alpha_2 - \frac{2}{3} \zeta_1 - \frac{1}{3} \zeta_2.
-\end{equation}
+  \DIFaddbegin \label{eq:4}
+\DIFaddend \end{equation}
 For the case of a black hole, $U_\mathrm{G} = mc^2$ so
 $\Delta=\eta_N$. 
 
@@ -180,8 +184,10 @@ harmonic oscillator so
 \begin{equation}
   \left (1 - \Delta \right) \omega^2 x
    = a_\bullet - a_\star = -\Delta \frac{GM}{d^2}
-  \label{eq:3}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:3}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:5}
+\DIFaddend \end{equation}
 and $x$ is the displacement of the black hole from the centre of the
 small stellar system in the direction of the larger system. If
 $\Delta>1$ the black hole would not lie near the centre of the galaxy,
@@ -194,8 +200,10 @@ density distribution that well describes the stellar distribution of
 elliptical galaxies
 \begin{equation}
   \rho = \frac{m}{2\pi} \frac{a}{r} \frac{1}{(r+a)^3}
-  \label{eq:4}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:4}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:6}
+\DIFaddend \end{equation}
 where $R_\mathrm{eff}$, the half-light radius in projection is
 approximately $1.8153 a$.  We take the black hole mass to be
 $m_\bullet$ to be much less than that of the small system.  However,
@@ -203,10 +211,10 @@ within a small region near the black hole, the mass of the black hole
 dominates that of the stars.  We will take the mass of the stars
 within this sphere of influence to be $\alpha m_\bullet$ where
 $\alpha\approx 1$.  Now if the black hole is displaced from the centre
-by violation of the equivalence principle, Eq.~\ref{eq:3}, then we
+by violation of the equivalence principle, Eq.~\DIFdelbegin \DIFdel{\ref{eq:3}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq:5}}\DIFaddend , then we
 assume that these stars will be displaced with the black hole and
 remained centred on the black hole with a Hernquist distribution of
-density, Eq.~\ref{eq:4}.  On the other hand, we will assume that the
+density, Eq.~\DIFdelbegin \DIFdel{\ref{eq:4}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq:6}}\DIFaddend .  On the other hand, we will assume that the
 rest of the galaxy will remained centred on the undisplaced position
 of the black hole.  Of course, there will be a smooth transition
 between these two regimes, but this approximation contains the
@@ -216,20 +224,23 @@ over the gravitational potential energy of this configuration
 we find 
 \begin{equation}
   \omega^2 \approx 0.30 \left ( \frac{m}{\alpha m_\bullet} \right )^{1/2} \frac{Gm}{a^3}
-  \label{eq:5}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:5}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:7}
+\DIFaddend \end{equation}
 where the coefficient comes from the numerical integration and the scaling comes
 from considering the structure of the Hernquist model at small radii.
 
-If one directly used Eq.~(\ref{eq:4}) to calculate the \DIFdelbegin \DIFdel{restroring
-}\DIFdelend \DIFaddbegin \DIFadd{restoring
-}\DIFaddend force toward the centre, one would find that it is constant with
+If one directly used Eq.~(\DIFdelbegin \DIFdel{\ref{eq:4}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq:6}}\DIFaddend ) to calculate the \DIFdelbegin \DIFdel{restroring
+}\DIFdelend \DIFaddbegin \DIFadd{restoring }\DIFaddend force
+toward the centre, one would find that it is constant with
 displacement from the centre.  This would assume that the density is
 actually singular at the centre but also would neglect the effect of
 the black hole on the neighbouring stars which would be dragged with
-it.  We will compare this estimate with the detailed measurements of
-the potential near the core of the elliptical galaxy, M\,87, and find
-good agreement.
+it.  We will compare \DIFdelbegin \DIFdel{this estimate }\DIFdelend \DIFaddbegin \DIFadd{the estimate including the effect of neighbouring
+stars (Eq.~\ref{eq:7}) }\DIFaddend with the detailed measurements of the potential
+near the core of the elliptical galaxy, M\,87, \DIFaddbegin \DIFadd{as inferred from
+stellar velocities }\DIFaddend and find good agreement.
 
 We will take $\alpha=1$ and $m_\bullet=0.005m$ where 
 $m$ is the mass of a bulge and
@@ -238,8 +249,10 @@ halo approximately modelled by a Hernquist model \citep[as
 \begin{equation}
   \frac{x}{d} = 0.24 
 \frac{\Delta}{1-\Delta} \frac{M}{d^3} \frac{a^3}{m},
-  \label{eq:13}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:13}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:8}
+\DIFaddend \end{equation}
 so the relative displacement only depends on the relative masses and
 sizes of the various bodies and the angular displacement does not
 depend on the distance to the systems from Earth.  We can make this
@@ -309,19 +322,28 @@ the acceleration of M\,32 toward the centre of M31, $a_\star$ in
 Eq.~(\ref{eq:1}),
 \begin{equation}
   a_\star = \frac{v^2}{d} = 3.6\times 10^{-8} \mathrm{cm~s}^{-2}
-  \label{eq:7}.
+  \DIFdelbegin %DIFDELCMD < \label{eq:7}%%%
+\DIFdelend \DIFaddbegin \label{eq:9}\DIFaddend .
 \end{equation}
-For the galaxy M\,32 we take $m=8 \times 10^8 \msun$ and
-$R_\mathrm{eff} = 100$~pc so $a=55$~pc and
+For the galaxy M\,32 \DIFdelbegin \DIFdel{we }\DIFdelend \DIFaddbegin \DIFadd{as a first approximation we will use a Hernquist
+model that fits to the global structure of the galaxy.  This model
+fits the observed half-light radius of the galaxy (we will revisit
+this assumption later in light of data that probe the centralmost
+regions, see Fig.~\ref{fig:M32-iso}), so we }\DIFaddend take $m=8 \times 10^8 \msun$
+and $R_\mathrm{eff} = 100$~pc so $a=55$~pc and
 \begin{equation}
   x = 0.091 \frac{\Delta}{1-\Delta} \mathrm{pc}
-  \label{eq:8}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:8}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:10}
+\DIFaddend \end{equation}
 or
 \begin{equation}
   \Delta \theta = \frac{x}{d_\mathrm{M32-Sun}} = 0.0288 \frac{\Delta}{1-\Delta} \mathrm{arcseconds},
-  \label{eq:9}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:9}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:11}
+\DIFaddend \end{equation}
 so if M\,32 lies indeed at the close to minimum distance to M\,31, the
 existing measurement of the position of the black hole yields a
 constraint of $\Delta < 0.95$.
@@ -410,7 +432,7 @@ data
   \label{fig:M32-iso}
 \end{figure}
 
-\DIFadd{If we examine Eq.~\ref{eq:5}, we see that the spring constant of the
+\DIFadd{If we examine Eq.~\ref{eq:7}, we see that the spring constant of the
 Hernquist model that best reflects the central region of M}\,\DIFadd{32 is
 about 70 times larger than that of the model of the entire galaxy and
 the expected displacement is 70 times smaller,
@@ -477,8 +499,10 @@ $1.3^\circ$. This yields a displacement of
 \begin{equation}
   \Delta \theta = 0.02 \cos^3 i \frac{\Delta}{1-\Delta} 
   \mathrm{arcseconds}.
-  \label{eq:16}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:16}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:13}
+\DIFaddend \end{equation}
 We can examine the stellar distribution of M\,87 in further detail.
 \citet{2006ApJS..164..334F} find that the central region of M\,87 is
 better fit by a ``core-S\'ersic'' model
@@ -580,14 +604,18 @@ to M\,87 of 16.4~Mpc \citep{2010A&A...524A..71B} and the same mass and
 angular distance to the subclump centred on M\,84 as earlier yields
 \begin{equation}
   x = 1.1 \frac{\Delta}{1-\Delta} \cos^2 i ~\mathrm{pc}
-  \label{eq:18}
-\end{equation}
+  \DIFdelbegin %DIFDELCMD < \label{eq:18}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:14}
+\DIFaddend \end{equation}
 and
 \begin{equation}
     \Delta \theta = 0.014 \frac{\Delta}{1-\Delta} \cos^3 i~
     \mathrm{arcseconds}
-    \label{eq:17}
-\end{equation}
+    \DIFdelbegin %DIFDELCMD < \label{eq:17}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \label{eq:15}
+\DIFaddend \end{equation}
 where we have extrapolated the theoretical stellar mass profile of
 \citet{2013ApJ...770...86W} out to 10~arcseconds, slightly beyond the
 break radius of 7.15~arcseconds determined by
@@ -599,7 +627,8 @@ steepens.
 %%   \Delta \theta = 2.28 \frac{\Delta}{1-\Delta} \mathrm{arcseconds}
 %%   \sqrt{\cos^6 i_1 + \cos^6 i_2 + 2 \cos^3 i_1 \cos^3 i_2 \cos
 %%     135^\circ }.
-%%   \label{eq:15}
+%DIF < %   \label{eq:15}
+%DIF > %   \label{eq:16}
 %% \end{equation}
 %% The mean of the geometric term in this case is 0.35 and the ninety
 %% percent confidence range is from $10^{-3}$ to $0.9$.
@@ -687,7 +716,7 @@ much shallower.  The isophotes constrain the deviation of the black
 hole from the centre of the potential within 0.03~arcseconds, yielding
 a constraint on the violation of the SEP for black holes of
 $\Delta<0.68$, assuming the more conservative displacement estimate
-Eq.~(\ref{eq:17}) and a favourable geometry of $i\approx 0^\circ$.
+Eq.~(\DIFdelbegin \DIFdel{\ref{eq:17}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq:15}}\DIFaddend ) and a favourable geometry of $i\approx 0^\circ$.
 Using additional images, more sophisticated isophote fitting procedure
 and more detailed modelling of the mass distribution of the Virgo
 cluster could possibly yield smaller constraints.
@@ -726,7 +755,7 @@ acceleration is due to large scale structure, quite a bit smaller than
 the acceleration of our setup \citep{2012PhRvL.109e1304H}.  Despite
 this, deriving a phenomenological limit on $\Delta$ is useful, for
 several reasons.\footnote{Note also the environmental dependence of
-  $\Delta$ is often such that $\Delta$ on the left hand side of Eq.~(\ref{eq:3})
+  $\Delta$ is often such that $\Delta$ on the left hand side of Eq.~(\DIFdelbegin \DIFdel{\ref{eq:3}}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq:5}}\DIFaddend )
   is much smaller than $\Delta$ on the right; the statements above
   refer to the latter.}  First, new theories -- massive gravity being
 an example -- are still being developed. Second, equivalence principle
@@ -836,7 +865,10 @@ on $\eta_N$ on the order of $10^{-4}$ might be possible.
 obtained at the Space Telescope Science Institute, which is operated
 by the Association of Universities for Research in Astronomy
 Inc. under NASA contract NAS5-26555 and accessed through the Hubble
-Legacy Archive. These observations are associated with proposal
+Legacy Archive \DIFaddbegin \DIFadd{which is a collaboration between the Space Telescope
+Science Institute (STScI/NASA), the Space Telescope European
+Coordinating Facility (ST-ECF/ESA) and the Canadian Astronomy Data
+Centre (CADC/NRC/CSA)}\DIFaddend . These observations are associated with proposal
 GO-11714 (PI: Bond) and GO-12989 (PI: Renzini).  This work was
 supported by the Natural Sciences and Engineering Research Council of
 Canada, the Canadian Foundation for Innovation, the British Columbia
