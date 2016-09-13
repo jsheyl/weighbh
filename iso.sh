@@ -3,6 +3,7 @@ ctioga2 --name iso --xlog  \
 	/scale 1.2 \
 	-l 'Global Hernquist Model' \
 	--yoffset 0.9 \
+	--line-style auto \
 	hern.dat \
 	-l 'Central Hernquist Model' \
 	--xscale 0.1 \
@@ -13,6 +14,7 @@ ctioga2 --name iso --xlog  \
 	-l 'Lauer et al.\ Observed WPFC2' \
 	wfpc2o.txt \
 	-l 'Lauer et al.\ Deconvolved WPFC2' \
+	--line-style 4,2,2,2 \
 	wfpc2d.txt \
 	-l 'Michard \& Nieto $B-$Band' \
 	--line-style no --marker auto \
