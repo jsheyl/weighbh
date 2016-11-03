@@ -3,10 +3,7 @@ before_install:
   texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-pictures
   dvipng
 script:
-- pdflatex weighbh.tex
-- bibtex weighbh
-- pdflatex weighbh.tex
-- pdflatex weighbh.tex
+- pdflatex pdflatex \\nonstopmode\\input weighbh.tex && bibtex weighbh && pdflatex pdflatex \\nonstopmode\\input weighbh.tex && pdflatex pdflatex \\nonstopmode\\input weighbh.tex
 deploy:
   provider: releases
   api_key:
