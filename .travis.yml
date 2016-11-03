@@ -3,10 +3,11 @@ before_install:
 script:
 - mkdir _build
 - pdflatex -output-directory _build weighbh.tex
+- bibtex weighbh.tex
+- pdflatex -output-directory _build weighbh.tex
+- pdflatex -output-directory _build weighbh.tex
 deploy:
   provider: releases
   file:
   - _build/weighbh.pdf
   skip_cleanup: true
-  on:
-    tags: true
