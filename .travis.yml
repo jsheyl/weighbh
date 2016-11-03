@@ -7,7 +7,6 @@ script:
 - bibtex weighbh
 - pdflatex weighbh.tex
 - pdflatex weighbh.tex
-- git add weighbh.pdf
 deploy:
   provider: releases
   api_key:
