@@ -1,0 +1,14 @@
+before_install:
+- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-pictures
+  dvipng
+script:
+- pdflatex  \\nonstopmode\\input weighbh.tex && bibtex weighbh &&  pdflatex \\nonstopmode\\input weighbh.tex &&  pdflatex \\nonstopmode\\input weighbh.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: Xz1ae+4aiEdROKaKmh3dVO7wd7pgZzJc3DHwhnRcJW0F0LhAXyr7+0lTAViBjVSlvJpN2FzqAeaXKm3QP7gHhH9RldF2Blza8O9fTFcL74roPdu1+h1DgsspoSTYRMIKFxxmOa/uaGePrXWwiv9SRnzRHrOPI5aIK57pMnYIauCx8MqdRII57uuQNKEIxLXwADpkn+YOVchvGP/VueccXSV/nShglSBLB4H/NRlE7WBgTEukT0FerM/OkFEhoi7a3J0IjcFxNUrn3zfzhr/s+ny3k2R8lxRxXg/8Erqo/8p9BcNkLf419osaR5bbSlLJUSZXL1PKD0g+zgg9aNRUzUTaAeuop2C50unP+DDRCLXDEiO5ffIMxoSsQkN41oEbWvXjZf+R28Jrkesq48m6Akx5etDM6tOjVBMKUBUmJ9RRAWFnw3MungOoCBQvqp8ZYyR05fSFPvLK3q5pcJ/Dww9dSsvflZbR4naHSbY+kRM0U5STZKeWABUSdvGY++pEMgYennqF69dsol8LSxUGDXYmDhrgidodzWEx9xG71w+w/5rEzZVqfhPJai+sscBSQQ60Y3yYClu1LWRWFRkS8B0yMPSU4D3XCmXDLJUucUoRKjU8u5/FzVhFp7rpjndaKp1D5y6Y3JTmKy3LW4egpnhthBVqTeYeOEzL8XunYmo=
+  file: weighbh.pdf
+  on:
+    repo: jsheyl/weighbh
+    tags: true
