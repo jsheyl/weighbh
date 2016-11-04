@@ -1,0 +1,69 @@
+isoregion_01.reg 01 RMS = 0.0150055 mean = 0.0181856 npixel = 17341
+isoregion_02.reg 02 RMS = 0.0386537 mean = 0.0150364 npixel = 28876
+isoregion_03.reg 03 RMS = 0.00844108 mean = 0.0117387 npixel = 40476
+isoregion_04.reg 04 RMS = 0.00603667 mean = 0.00959761 npixel = 51941
+isoregion_05.reg 05 RMS = 0.00366469 mean = 0.00836326 npixel = 63587
+isoregion_06.reg 06 RMS = 0.00539266 mean = 0.0075391 npixel = 75090    21.0183
+isoregion_07.reg 07 RMS = 0.00250387 mean = 0.00642957 npixel = 86684	21.1912
+isoregion_08.reg 08 RMS = 0.00841097 mean = 0.00629222 npixel = 98207	21.2146
+isoregion_09.reg 09 RMS = 0.0044002 mean = 0.00519527 npixel = 109810	21.4226
+isoregion_10.reg 10 RMS = 0.00357332 mean = 0.00446308 npixel = 121287	21.5876
+isoregion_11.reg 11 RMS = 0.00650251 mean = 0.00433462 npixel = 132863	21.6193
+# isoregion_12.reg 12 RMS = 0.0571556 mean = 0.00857591 npixel = 144471	20.8784
+isoregion_13.reg 13 RMS = 0.0220472 mean = 0.00513095 npixel = 156015	21.4361
+isoregion_14.reg 14 RMS = 0.0207531 mean = 0.00451361 npixel = 167523	21.5753
+isoregion_15.reg 15 RMS = 0.0141108 mean = 0.00343564 npixel = 179106	21.8716
+isoregion_16.reg 16 RMS = 0.00333409 mean = 0.0022413 npixel = 190671	22.3354
+isoregion_17.reg 17 RMS = 0.0131702 mean = 0.00284928 npixel = 202180	22.0748
+isoregion_18.reg 18 RMS = 0.00534752 mean = 0.00206483 npixel = 213817	22.4244
+isoregion_19.reg 19 RMS = 0.00283567 mean = 0.00161287 npixel = 225276	22.6926
+isoregion_20.reg 20 RMS = 0.0026004 mean = 0.00140702 npixel = 236911	22.8409
+isoregion_21.reg 21 RMS = 0.00196182 mean = 0.00115782 npixel = 248435	23.0525
+isoregion_22.reg 22 RMS = 0.00175221 mean = 0.00099187 npixel = 260047	23.2205
+isoregion_23.reg 23 RMS = 0.00165282 mean = 0.000838138 npixel = 271424	23.4034
+hisoregion_25.reg 25 RMS = 0.00178362 mean = 0.000648357 npixel = 29467123.6821
+isoregion_26.reg 26 RMS = 0.00171927 mean = 0.000567321 npixel = 306223	23.8271
+isoregion_27.reg 27 RMS = 0.00156412 mean = 0.000445755 npixel = 317739	24.0889
+isoregion_28.reg 28 RMS = 0.00157222 mean = 0.00036043 npixel = 329370	24.3196
+isoregion_29.reg 29 RMS = 0.00161088 mean = 0.000336948 npixel = 340810	24.3927
+isoregion_30.reg 30 RMS = 0.00160633 mean = 0.000238618 npixel = 352463	24.7674
+isoregion_31.reg 31 RMS = 0.0015714 mean = 0.000164428 npixel = 363961	25.1717
+isoregion_32.reg 32 RMS = 0.00160119 mean = 0.000127994 npixel = 375569	25.4437
+isoregion_33.reg 33 RMS = 0.00158511 mean = 8.1733e-05 npixel = 387101	25.9306
+isoregion_34.reg 34 RMS = 0.00160925 mean = 3.62841e-05 npixel = 398649	26.8123
+isoregion_35.reg 35 RMS = 0.00150443 mean = -4.3398e-05 npixel = 410236
+isoregion_36.reg 36 RMS = 0.00163736 mean = -4.09645e-05 npixel = 421693
+isoregion_37.reg 37 RMS = 0.00155477 mean = -8.53884e-05 npixel = 433338
+isoregion_38.reg 38 RMS = 0.0015493 mean = -0.000139939 npixel = 444953
+isoregion_39.reg 39 RMS = 0.00154645 mean = -0.000168889 npixel = 456433
+isoregion_40.reg 40 RMS = 0.00158714 mean = -0.000210515 npixel = 467938
+isoregion_41.reg 41 RMS = 0.00156711 mean = -0.00026066 npixel = 479553
+isoregion_42.reg 42 RMS = 0.00152719 mean = -0.000284126 npixel = 491068
+isoregion_43.reg 43 RMS = 0.0018771 mean = -0.000306589 npixel = 502666
+isoregion_44.reg 44 RMS = 0.00149252 mean = -0.000343907 npixel = 514189
+isoregion_45.reg 45 RMS = 0.00153925 mean = -0.00033743 npixel = 525762
+isoregion_46.reg 46 RMS = 0.00152334 mean = -0.000379656 npixel = 537241
+isoregion_47.reg 47 RMS = 0.00153424 mean = -0.000434631 npixel = 549014
+isoregion_48.reg 48 RMS = 0.00148468 mean = -0.000465084 npixel = 560379
+isoregion_49.reg 49 RMS = 0.00152232 mean = -0.000491675 npixel = 571928
+isoregion_50.reg 50 RMS = 0.00149043 mean = -0.000512879 npixel = 583537
+isoregion_51.reg 51 RMS = 0.00150757 mean = -0.000525086 npixel = 595123
+isoregion_52.reg 52 RMS = 0.00149383 mean = -0.000546372 npixel = 606674
+isoregion_53.reg 53 RMS = 0.00153681 mean = -0.000573022 npixel = 618250
+isoregion_54.reg 54 RMS = 0.00149182 mean = -0.00059135 npixel = 629723
+isoregion_55.reg 55 RMS = 0.00145328 mean = -0.000623768 npixel = 641238
+isoregion_56.reg 56 RMS = 0.00149135 mean = -0.000617636 npixel = 652885
+isoregion_57.reg 57 RMS = 0.00146272 mean = -0.000652966 npixel = 664435
+isoregion_58.reg 58 RMS = 0.00150909 mean = -0.000639056 npixel = 676008
+isoregion_59.reg 59 RMS = 0.00149342 mean = -0.000657554 npixel = 687537
+isoregion_60.reg 60 RMS = 0.00151579 mean = -0.000691465 npixel = 699058
+isoregion_61.reg 61 RMS = 0.00147227 mean = -0.000724944 npixel = 710540
+isoregion_62.reg 62 RMS = 0.00145446 mean = -0.000743463 npixel = 722278
+isoregion_63.reg 63 RMS = 0.00146208 mean = -0.000742625 npixel = 733768
+isoregion_64.reg 64 RMS = 0.00150257 mean = -0.00075047 npixel = 745383
+isoregion_65.reg 65 RMS = 0.00145277 mean = -0.000800476 npixel = 756772
+isoregion_66.reg 66 RMS = 0.0014674 mean = -0.000798649 npixel = 768414
+isoregion_67.reg 67 RMS = 0.00152415 mean = -0.000790748 npixel = 779944
+isoregion_68.reg 68 RMS = 0.00202215 mean = -0.000801616 npixel = 791658
+isoregion_69.reg 69 RMS = 0.00287599 mean = -0.000850506 npixel = 803080
+isoregion_70.reg 70 RMS = 0.00313197 mean = -0.000868691 npixel = 814540
